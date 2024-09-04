@@ -1,0 +1,19 @@
+.footer{
+    color: white;
+    /* min-height: 20vh; */
+    height: 500vh;
+    align-content: center;
+    background-color: black;
+}
+
+.footer .footerLinks{
+    display: flex;
+    gap:5%;
+}
+.footer .footerLinks li{
+    list-style: none;
+}
+.footer .footerLinks li a{
+    text-decoration: none;
+    color:white;
+}
