@@ -19,7 +19,7 @@ const Header = () => {
                         <Nav.Link href="#contactMe" className={`text-white ${styles.navlink}`}>Contact Me</Nav.Link>
                     </Nav>
                     <Form className="d-flex">
-                        <Button className={`${styles.primaryBtn} ${styles.navBtn}`}>Let's Connect</Button>
+                        <Button className="primaryBtn">Let's Connect</Button>
                     </Form>
                 </Navbar.Collapse>
             </Container>

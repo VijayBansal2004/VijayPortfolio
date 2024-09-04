@@ -1,19 +1,11 @@
 import './App.css'
-import ContactMe from './components/contactMe/ContactMe'
-import Footer from './components/footer/Footer'
-import Header from './components/header/Header'
-import Home from './components/heroSection/Home'
-import Skills from './components/skills/Skills'
+import Layout from './components/layout/Layout'
 
 function App() {
 
   return (
     <>
-      <Header />
-      <Home />
-      <Skills />
-      <ContactMe />
-      <Footer />
+      <Layout />
     </>
   )
 }

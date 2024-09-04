@@ -19,3 +19,17 @@ body{
 .containerBlockPadding{
     padding-block: 100px;
 }
+
+/* utilities */
+.primaryBtn{
+    border: none !important;
+    background-color:var(--oringe-color) !important;
+    color: white !important;
+    width: 9rem;
+    padding: 10px !important;
+    font-weight: 700 !important;
+
+    &:hover{
+        background-color:#f26602d4 !important;
+    }
+}
