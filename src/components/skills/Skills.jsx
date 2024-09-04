@@ -91,10 +91,16 @@ const Skills = () => {
                 }
             </div>
 
-            <div className={styles.skillsPercentage}>
-                {
-                    skillPercentage.map((element, index) => (<SkillsPercentage element={element} key={index} />))
-                }
+            <div className={`${styles.skillsPercentage} row`}>
+                <div className="col-12 col-lg-6">
+                    <h2 class={`${styles.skillsPercentageHeading}`}>Technologies</h2>
+                </div>
+
+                <div className={` col-12 col-lg-6`}>
+                    {
+                        skillPercentage.map((element, index) => (<SkillsPercentage element={element} key={index} />))
+                    }
+                </div>
             </div>
         </section>
     )

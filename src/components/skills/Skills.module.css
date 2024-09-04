@@ -58,8 +58,18 @@
 
 
 /* Skills in percentage */
+
 .skillsPercentage{
-    margin-block: 70px;
+    margin-block: 100px !important;
+}
+
+.skillsPercentageHeading{
+    position: sticky;
+    top: 10vh;
+    display: inline-block;
+    background-color: #f2660257;
+    padding: 15px 20px;
+    border-radius: 10px;
 }
 
 .skillPercentageContainer{
@@ -92,3 +102,4 @@
         width: 100%;
     }   
 } */
+
