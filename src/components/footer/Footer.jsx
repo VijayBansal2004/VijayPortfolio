@@ -15,10 +15,10 @@ const Footer = () => {
                 <div className="footerLinksContainer col-12 col-lg-6 align-content-center">
                     <ul className={`${styles.footerLinks} m-0 justify-content-center`}>
                         <li><a href="#home">Home</a></li>
-                        <li><a href="aboutMe"></a>About Me</li>
-                        <li><a href="skills"></a>Skills</li>
-                        <li><a href="projects"></a>Projects</li>
-                        <li><a href="contactMe"></a>Contact Me</li>
+                        <li><a href="#aboutMe">About Me</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contactMe">Contact Me</a></li>
                     </ul>
                 </div>
 

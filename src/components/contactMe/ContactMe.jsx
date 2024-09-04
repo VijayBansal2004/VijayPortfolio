@@ -37,7 +37,7 @@ const ContactMe = () => {
                                 style={{ height: '100px' }}
                             />
                         </div>
-                        <a href='#home' className="primaryBtn w-100" type="submit" size="lg">Submit</a>
+                        <Button className="primaryBtn w-100" type="submit" size="lg">Submit</Button>
                     </Form>
                 </div>
             </div>

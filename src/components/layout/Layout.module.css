@@ -1,0 +1,16 @@
+.gotoHome,.gotoHome *{
+    width: 40px;
+    height: 40px;
+}
+
+.gotoHome{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 20;
+}
+
+.gotoHome *{
+    text-decoration: none;
+    align-content: center;
+}
