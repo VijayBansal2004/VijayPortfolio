@@ -67,16 +67,16 @@ const Projects = () => {
 
     const funProjectsContent = [
         {
-            imagePath: '../../../public/images/kantipur.png',
-            websiteURL: "https://vijaybansal2004.github.io/Kantipur-Rimit",
-            title: 'Kantipur Remit',
-            discription: 'Send money to Nepal with Kantipur Remit !',
+            imagePath: '../../../public/images/reactForm.png',
+            websiteURL: "https://github.com/VijayBansal2004/useForm---React",
+            title: 'User From',
+            discription: 'This form validates user input data',
         },
         {
-            imagePath: '../../../public/images/clearPath.png',
-            websiteURL: "https://vijaybansal2004.github.io/clearpath",
-            title: 'ClearPath Remit',
-            discription: 'Save up to 3x on international transfers across more than 50 currencies, with no hidden fees.',
+            imagePath: '../../../public/images/guessTheNumber.png',
+            websiteURL: "https://github.com/VijayBansal2004/guess-the-number",
+            title: 'Guess the Number',
+            discription: 'In this game the user has to guess the computer generated random number',
         },
     ];
 
