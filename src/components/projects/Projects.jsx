@@ -78,6 +78,12 @@ const Projects = () => {
             title: 'Guess the Number',
             discription: 'In this game the user has to guess the computer generated random number',
         },
+        {
+            imagePath: '../../../public/images/wordFormatter.png',
+            websiteURL: "https://github.com/VijayBansal2004/wordFormatter",
+            title: 'Word Formatter',
+            discription: 'This app transforms user entered text!',
+        },
     ];
 
     const allProjects = [...remittanceContent, ...blockchainContent, ...tradingContent, ...fantasyContent, ...funProjectsContent];
