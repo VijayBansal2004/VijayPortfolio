@@ -4,8 +4,8 @@ import styles from "./ProjectCard.module.css"
 const ProjectCard = ({ content }) => {
     return (
         <>
-            <a href={content.websiteURL}>
-                <div className={`${styles.projectCard}`}>
+            <div className={`${styles.projectCard}`}>
+                <a href={content.websiteURL}>
                     <div className={`${styles.projectImgContainer}`}>
                         <img src={content.imagePath} alt={content.title} />
                     </div>
@@ -15,8 +15,8 @@ const ProjectCard = ({ content }) => {
                         <br />
                         <p className={`${styles.scrollReveal} ${styles.projectCardDetails}`}>{content.discription}</p>
                     </div>
-                </div>
-            </a>
+                </a>
+            </div>
         </>
     )
 }

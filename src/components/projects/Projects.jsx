@@ -87,8 +87,8 @@ const Projects = () => {
             <div className="container">
                 <Heading heading="Projects" />
                 <Tab.Container id="left-tabs-example" defaultActiveKey="allProjects" className={`${styles.projectContainer}`}>
-                    <Row>
-                        <Col sm={2}>
+                    <Row className='gap-5 gap-sm-0'>
+                        <Col sm={3} lg={2}>
                             <Nav variant="pills" className={`flex-column ${styles.projectNavContainer}`}>
                                 <Nav.Item>
                                     <Nav.Link eventKey="allProjects">All Projects</Nav.Link>
@@ -115,7 +115,7 @@ const Projects = () => {
                                 </Nav.Item>
                             </Nav>
                         </Col>
-                        <Col sm={10}>
+                        <Col sm={9} lg={10}>
                             <Tab.Content>
                                 <Tab.Pane eventKey="allProjects">
                                     <div className={`${styles.projectCardContainer}`}>

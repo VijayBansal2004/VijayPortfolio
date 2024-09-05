@@ -1,7 +1,8 @@
-.skillsContainer{
+.skillsContainer {
     color: white;
-    height: 100vh;
+    min-height: 100vh;
 }
+
 /* background: radial-gradient(circle at 10% 20%, rgb(255, 197, 61) 0%, rgb(255, 94, 7) 90%); */
 
 /* .scrollReveal{
@@ -26,7 +27,7 @@
 
 
 /* Skill container */
-.skillContainer{
+.skillContainer {
     display: flex;
     gap: 70px;
     justify-content: center;
@@ -37,7 +38,7 @@
     overflow: hidden;
 }
 
-.skillLogo{
+.skillLogo {
     width: 70px !important;
     height: 70px !important;
     animation: skillsScroll linear forwards;
@@ -45,25 +46,25 @@
     filter: brightness(0.6);
     transition: all .1s ease-in-out;
 
-    &:hover{
+    &:hover {
         filter: brightness(1);
     }
 }
 
 @keyframes skillsScroll {
-    100%{
+    100% {
         transform: translateX(100vw);
-    } 
+    }
 }
 
 
 /* Skills in percentage */
 
-.skillsPercentage{
-    margin-block: 100px !important;
+.skillsPercentage {
+    padding-top: 100px !important;
 }
 
-.skillsPercentageHeading{
+.skillsPercentageHeading {
     position: sticky;
     top: 10vh;
     display: inline-block;
@@ -72,21 +73,22 @@
     border-radius: 10px;
 }
 
-.skillPercentageContainer{
+.skillPercentageContainer {
     transition: all .2s ease-out;
 
-    &:hover{
-        scale:1.05;
+    &:hover {
+        scale: 1.05;
     }
 }
 
-.skillName,.skillPercentage{
+.skillName,
+.skillPercentage {
     font-size: 1.2rem;
     font-weight: 500;
     margin-bottom: 5px;
 }
 
-.skillPercentageBar{
+.skillPercentageBar {
     background-color: #f26602;
     height: 5px;
     border-radius: 10px;
@@ -104,29 +106,34 @@
 } */
 
 
-@media(max-width:992px){
+@media(max-width:992px) {
     .skillContainer {
         gap: 50px;
     }
 }
-@media(max-width:575px){
+
+@media(max-width:575px) {
     .skillContainer {
         gap: 30px;
     }
 }
-@media(max-width:470px){
+
+@media(max-width:470px) {
     .skillContainer {
         gap: 20px;
     }
+
     .skillLogo {
         width: 50px !important;
         height: 50px !important;
     }
 }
-@media(max-width:360px){
+
+@media(max-width:360px) {
     .skillContainer {
         gap: 15px;
     }
+
     .skillLogo {
         width: 40px !important;
         height: 40px !important;
