@@ -38,7 +38,7 @@ body{
     animation:fadeUp linear forwards;
     animation-timeline: view();
     animation-range-start: 0vh;
-    animation-range-end: 40vh;
+    animation-range-end: 30vh;
     scale:.7;
     opacity:0;
 }
