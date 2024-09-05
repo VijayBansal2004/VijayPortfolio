@@ -1,0 +1,14 @@
+.projectSectionContainer{
+    color:white;
+    min-height:100vh;
+    margin-block:100px;
+    background-color:#ffffff1f;
+}
+
+.projectContainer{
+    min-height:100vh;
+}
+.projectNavContainer{
+    position:sticky;
+    top:10vh;
+}

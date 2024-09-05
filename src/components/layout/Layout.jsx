@@ -2,6 +2,7 @@ import React from 'react'
 import Header from "../header/Header"
 import Home from "../heroSection/Home"
 import Skills from "../skills/Skills"
+import Projects from "../projects/Projects"
 import ContactMe from "../contactMe/ContactMe"
 import Footer from "../footer/Footer"
 import styles from "./Layout.module.css"
@@ -12,6 +13,7 @@ const Layout = () => {
             <Header />
             <Home />
             <Skills />
+            <Projects/>
             <ContactMe />
             <Footer />
             <div className={`${styles.gotoHome}`}>

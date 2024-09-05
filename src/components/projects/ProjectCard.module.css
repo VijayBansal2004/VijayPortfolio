@@ -1,0 +1,72 @@
+.projectCardContainer{
+    display :flex;
+    flex-wrap:wrap;
+    gap: 15px;
+}
+
+.projectCard{
+    background-color: #ffffff0a;
+    width: 48%;
+    border-radius: 15px;
+    position:relative;
+    border-radius: 10px 10px 10px 10px;
+    overflow:hidden;
+    box-shadow: 0px 0px 40px -30px #f26602;
+    transition:all .3s ease-in-out;
+
+    &:hover{
+        scale:1.04;
+    }
+}
+
+.projectImgContainer{
+    width:100%;
+    overflow:hidden;
+    cursor:pointer;
+
+}
+
+.projectImgContainer img{
+    width:100%;
+}
+
+.projectDetailsContainer{
+    position:absolute;
+    inset: 0;
+    background-color: #000000ba;
+    align-content: end;
+    padding: 10px 30px;
+
+    .projectCardHeading{
+        font-size: 1.7rem;
+        font-weight: 900;
+    }
+
+    .scrollReveal{
+        background: radial-gradient(circle at 10% 20%, rgb(255, 197, 61) 0%, rgb(255, 94, 7) 90%); 
+
+        display: inline;
+        /* background: radial-gradient(circle at 10% 20%, rgb(255, 255, 255), rgb(255, 255, 255)); */
+        background-clip: text;
+        background-size:0% 100%;
+        background-repeat: no-repeat;
+        color: #ffffff3b;
+        
+        animation: scrollReveal linear forwards;
+        animation-timeline: view();
+        animation-range:entry();
+        animation-range-end: 50%;
+    }
+
+    .projectCardDetails{
+        font-size: .9rem;
+        font-weight: 500;
+    }
+}
+
+@keyframes scrollReveal {
+    100%{
+        background-size:100% 100%;
+    }
+} 
+

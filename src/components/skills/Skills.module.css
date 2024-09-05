@@ -103,3 +103,33 @@
     }   
 } */
 
+
+@media(max-width:992px){
+    .skillContainer {
+        gap: 50px;
+    }
+}
+@media(max-width:575px){
+    .skillContainer {
+        gap: 30px;
+    }
+}
+@media(max-width:470px){
+    .skillContainer {
+        gap: 20px;
+    }
+    .skillLogo {
+        width: 50px !important;
+        height: 50px !important;
+    }
+}
+@media(max-width:360px){
+    .skillContainer {
+        gap: 15px;
+    }
+    .skillLogo {
+        width: 40px !important;
+        height: 40px !important;
+        filter: brightness(1);
+    }
+}
