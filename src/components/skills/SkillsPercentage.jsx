@@ -3,7 +3,7 @@ import styles from './Skills.module.css'
 
 const SkillsPercentage = ({ element }) => {
     return (
-        <div className={`${styles.skillPercentageContainer} mb-3`}>
+        <div className={`${styles.skillPercentageContainer} fadeUpAnimation mb-3`}>
             <div className='skillPercentageDetails d-flex justify-content-between align-items-center'>
                 <p className={`${styles.skillName}`}>{element.skillName}</p>
                 <p className={`${styles.skillPercentage}`}>{element.skillPercentage}</p>

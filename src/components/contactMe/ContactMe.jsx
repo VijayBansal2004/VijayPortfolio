@@ -12,7 +12,7 @@ const ContactMe = () => {
                     <Heading heading="Contact Me" />
 
                     <Form className='d-grid gap-4'>
-                        <div>
+                        <div className="fadeUpAnimation">
                             <Form.Label htmlFor="inputPassword5">Enter Name</Form.Label>
                             <Form.Control
                                 type="text"
@@ -21,7 +21,7 @@ const ContactMe = () => {
                                 className={`${styles.formControl}`}
                             />
                         </div>
-                        <div>
+                        <div className="fadeUpAnimation">
                             <Form.Label htmlFor="inputPassword5">Enter Email</Form.Label>
                             <Form.Control
                                 type="email"
@@ -30,7 +30,7 @@ const ContactMe = () => {
                                 className={`${styles.formControl}`}
                             />
                         </div>
-                        <div>
+                        <div className="fadeUpAnimation">
                             <Form.Label htmlFor="inputPassword5">Enter your comments</Form.Label>
                             <Form.Control
                                 as="textarea"
@@ -39,7 +39,7 @@ const ContactMe = () => {
                                 style={{ height: '100px' }}
                             />
                         </div>
-                        <Button className="primaryBtn w-100" type="submit" size="lg">Submit</Button>
+                        <Button className="primaryBtn w-100 fadeUpAnimation" type="submit" size="lg">Submit</Button>
                     </Form>
                 </div>
             </div>

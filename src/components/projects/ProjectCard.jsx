@@ -4,7 +4,7 @@ import styles from "./ProjectCard.module.css"
 const ProjectCard = ({ content }) => {
     return (
         <>
-            <div className={`${styles.projectCard}`}>
+            <div className={`${styles.projectCard} fadeUpAnimation`}>
                 <a href={content.websiteURL}>
                     <div className={`${styles.projectImgContainer}`}>
                         <img src={content.imagePath} alt={content.title} />

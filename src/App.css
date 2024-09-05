@@ -33,3 +33,19 @@ body{
         background-color:#f26602d4 !important;
     }
 }
+
+.fadeUpAnimation{
+    animation:fadeUp linear forwards;
+    animation-timeline: view();
+    animation-range-start: 0vh;
+    animation-range-end: 40vh;
+    scale:.7;
+    opacity:0;
+}
+
+@keyframes fadeUp {
+    100%{
+        scale:1;
+        opacity:1;
+    }
+}
