@@ -49,8 +49,8 @@
 
         animation: scrollReveal linear forwards;
         animation-timeline: scroll(root);
-        animation-range-start: 40%;
-        animation-range-end: 50%;
+        animation-range-start: 30%;
+        animation-range-end: 40%;
     }
 
     .projectCardDetails {
