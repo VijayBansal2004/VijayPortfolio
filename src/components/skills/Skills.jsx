@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './Skills.module.css'
 import SkillContainer from './SkillContainer'
 import SkillsPercentage from './SkillsPercentage'
+import Heading from '../utilityComponents/sectionHeading/Heading'
 
 const Skills = () => {
 
@@ -80,7 +81,8 @@ const Skills = () => {
 
     return (
         <section id='#skills' className={`${styles.skillsContainer} containerBlockPadding text-center container`}>
-            <h1>Skills</h1>
+            <Heading heading="Skills" />
+
             <p className={`${styles.scrollReveal}`}>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus sed eveniet aut soluta fugiat similique rem, quod voluptatum? Accusantium aut repellat sit error reprehenderit dignissimos quidem illum, molestias blanditiis? Eveniet.
             </p>

@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from "./Footer.module.css"
-import SocialMediaLinks from "../socialMedia/SocialMediaLinks"
+import SocialMediaLinks from "../utilityComponents/socialMedia/SocialMediaLinks"
 
 const Footer = () => {
     return (
@@ -21,7 +21,7 @@ const Footer = () => {
                 </div>
 
                 <div className="footerSocialMedia col-12 col-lg-3 d-flex gap-3 align-items-center justify-content-center justify-content-lg-end">
-                    <SocialMediaLinks/>
+                    <SocialMediaLinks />
                 </div>
             </div>
         </footer>

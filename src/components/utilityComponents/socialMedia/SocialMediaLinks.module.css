@@ -1,0 +1,7 @@
+.socialMediaLinks{
+    transition:all .1s ease-in;
+}
+.socialMediaLinks:hover{
+    color: #f26602;
+    scale:1.2;
+}

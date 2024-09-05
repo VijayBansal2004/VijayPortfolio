@@ -1,14 +1,21 @@
-.projectSectionContainer{
-    color:white;
-    min-height:100vh;
-    margin-block:100px;
-    background-color:#ffffff1f;
+.projectCardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
-.projectContainer{
-    min-height:100vh;
+.projectSectionContainer {
+    color: white;
+    min-height: 100vh;
+    padding-block: 100px;
+    background-color: #ffffff1f;
 }
-.projectNavContainer{
-    position:sticky;
-    top:10vh;
+
+.projectContainer {
+    min-height: 100vh;
+}
+
+.projectNavContainer {
+    position: sticky;
+    top: 10vh;
 }
