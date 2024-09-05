@@ -49,14 +49,14 @@
         display: inline;
         /* background: radial-gradient(circle at 10% 20%, rgb(255, 255, 255), rgb(255, 255, 255)); */
         background-clip: text;
-        background-size: 0% 100%;
+        background-size: 100% 100%;
         background-repeat: no-repeat;
         color: #ffffff3b;
 
-        animation: scrollReveal linear forwards;
+        /* animation: scrollReveal linear forwards;
         animation-timeline: scroll(root);
         animation-range-start: 30%;
-        animation-range-end: 50%;
+        animation-range-end: 50%; */
     }
 
     .projectCardDetails {
@@ -65,11 +65,11 @@
     }
 }
 
-@keyframes scrollReveal {
+/* @keyframes scrollReveal {
     100% {
         background-size: 100% 100%;
     }
-}
+} */
 
 
 @media(max-width:990px) {
