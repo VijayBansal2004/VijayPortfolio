@@ -1,35 +1,147 @@
-.heroSection{
+.heroSection {
     background: url(../../../public/images/vibrant-network-digital-connections.jpg);
     height: 100vh;
     background-size: cover;
     margin-top: -10vh;
+    position: relative;
 }
 
-.overlay{
+.overlay {
     height: 100%;
     background-color: #000000b0;
 }
 
-.heroSectionImgContainer img{
-    width: 100%;
+.heroImgbackground {
+    position: relative;
 }
 
-.heroSectionDetailsContainer{
+.heroImgbackground::before {
+    content: "";
+    position: absolute;
+    background-color: #f26602;
+    z-index: 0;
+    border-radius: 200px;
+    width: 400px;
+    height: 400px;
+    top: 0;
+    bottom: 0px;
+    right: 0;
+    left: 54px;
+}
+
+.heroImg {
+    border-radius: 0px 0px 347px 326px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.heroSectionDetailsContainer {
     color: white;
 }
 
 
 /* Scroll ZoomIn animation */
 
-.scrollZoomInAnimation{
+.scrollZoomInAnimation {
     animation: scrollZoomInAnimation linear forwards;
     animation-timeline: view();
     /* animation-range-start: 60vh;
     animation-range-end: 100vh; */
 }
 
-@keyframes scrollZoomInAnimation{
-    100%{
+@keyframes scrollZoomInAnimation {
+    100% {
         /* background-size: 150%; */
     }
 }
+
+.hello {
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.myName {
+    font-size: 4.5rem;
+    /* color: #f26602; */
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.role {
+    font-size: 18px;
+    color: #f26602;
+    font-weight: 600;
+}
+
+.SkilledAtContainer {
+    font-size: 2rem;
+}
+
+.typedText {
+    font-weight: 900;
+    color: #f26602;
+}
+
+
+
+
+/* Home page icons animation */
+
+/* animation: rotate 5s linear infinite; */
+/* animation: upDown 5s linear infinite alternate; */
+/* animation: leftRight 5s linear infinite alternate; */
+
+/* .animatedIcon {
+    position: absolute;
+    opacity: .4;
+} */
+
+/* .plus {
+    width: 50px;
+    left: 1%;
+    top: 10vh;
+    animation: rotate 8s linear infinite;
+}
+
+.strockedSqr {
+    width: 50px;
+    bottom: 1%;
+    animation: rotate 8s linear infinite;
+}
+
+.overlapedSqrs {
+    width: 50px;
+    right: 1%;
+    animation: upDown 8s linear infinite;
+} */
+
+/* Keyframes */
+
+/* @keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes upDown {
+    0% {
+        transform: translateY(30px);
+    }
+
+    100% {
+        transform: translateY(-30px);
+
+    }
+}
+
+@keyframes leftRight {
+    0% {
+        transform: translateX(30px);
+    }
+
+    100% {
+        transform: translateX(-30px);
+
+    }
+} */

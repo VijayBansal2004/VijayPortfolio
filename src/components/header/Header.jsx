@@ -7,8 +7,8 @@ import styles from './Header.module.css';
 const Header = () => {
     return (
         <Navbar collapseOnSelect expand="lg" className={styles.navbar}>
-            <Container>
-                <Navbar.Brand href="#home" className={`${styles.textColor} fw-bolder fs-1`}>Logo</Navbar.Brand>
+            <Container className="pb-3 pb-lg-0">
+                <Navbar.Brand href="#home" className={`${styles.textColor} fw-bolder fs-1`}>Vijay</Navbar.Brand>
                 <Navbar.Toggle className={`${styles.hamburger}`} aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className={` ${styles.navlinkContainer}`}>
@@ -19,7 +19,7 @@ const Header = () => {
                         <Nav.Link href="#contactMe" className={`text-white ${styles.navlink}`}>Contact Me</Nav.Link>
                     </Nav>
                     <Form className="d-flex">
-                        <Button className="primaryBtn">Let's Connect</Button>
+                        <Nav.Link href="#contactMe" className={`text-white`}><Button className="primaryBtn">Let's Connect</Button></Nav.Link>
                     </Form>
                 </Navbar.Collapse>
             </Container>

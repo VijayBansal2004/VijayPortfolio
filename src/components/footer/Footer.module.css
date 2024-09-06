@@ -4,6 +4,7 @@
     /* min-height: 500vh; */
     align-content: center;
     background-color: black;
+    padding-block: 20px;
 }
 
 .footer .footerLinks {

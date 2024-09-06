@@ -1,0 +1,59 @@
+/* Home page icons animation */
+
+/* animation: rotate 5s linear infinite; */
+/* animation: upDown 5s linear infinite alternate; */
+/* animation: leftRight 5s linear infinite alternate; */
+
+.animatedIcon {
+    position: absolute;
+    opacity: .4;
+}
+
+.plus {
+    width: 50px;
+    left: 1%;
+    top: 10vh;
+    animation: rotate 8s linear infinite;
+}
+
+.strockedSqr {
+    width: 50px;
+    bottom: 1%;
+    animation: rotate 8s linear infinite;
+}
+
+.overlapedSqrs {
+    width: 50px;
+    right: 1%;
+    animation: upDown 8s linear infinite;
+}
+
+/* Keyframes */
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes upDown {
+    0% {
+        transform: translateY(30px);
+    }
+
+    100% {
+        transform: translateY(-30px);
+
+    }
+}
+
+@keyframes leftRight {
+    0% {
+        transform: translateX(30px);
+    }
+
+    100% {
+        transform: translateX(-30px);
+
+    }
+}

@@ -8,7 +8,7 @@ const Footer = () => {
         <footer className={styles.footer}>
             <div className="container row gap-4 gap-lg-0">
                 <div className="footerLogo col-12 col-lg-3 text-center text-lg-start">
-                    <Nav.Link href="#home"><h1>Logo</h1></Nav.Link>
+                    <Nav.Link href="#home"><h1>Vijay</h1></Nav.Link>
                 </div>
 
                 <div className="footerLinksContainer col-12 col-lg-6 align-content-center text-center text-lg-start">
