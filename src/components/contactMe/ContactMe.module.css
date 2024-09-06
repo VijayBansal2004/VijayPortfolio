@@ -1,9 +1,3 @@
-.contactMeContainer {
-    height: 100vh;
-    /* align-content: center; */
-    /* background-color: rgba(255, 255, 255, 0.142); */
-}
-
 .socialMedia {
     position: sticky;
     top: 10vh;
@@ -16,6 +10,11 @@
     max-width: 800px;
     margin: auto;
     border-radius: 20px;
+}
+
+.contactFeildContainer{
+    display: grid;
+    gap: 20px;
 }
 
 .formControl {
@@ -34,5 +33,12 @@
         /* background-color: transparent !important; */
         border: 2px solid #a86d0045 !important;
         box-shadow: 0 0 0 .25rem rgba(87, 38, 0, 0.25) !important;
+    }
+}
+
+@media(max-width:991px){
+    .socialMedia {
+        position: static;
+        top: 10vh;
     }
 }
