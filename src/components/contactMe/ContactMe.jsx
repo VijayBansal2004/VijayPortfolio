@@ -97,7 +97,7 @@ const ContactMe = () => {
                                 type="email"
                                 name="email"
                                 className={`${styles.formControl}`}
-                                placeholder='Enter name'
+                                placeholder='Enter email'
                             />
                             <ValidationError
                                 prefix="Email"
@@ -110,7 +110,7 @@ const ContactMe = () => {
                                 id="message"
                                 name="message"
                                 className={`${styles.formControl}`}
-                                placeholder='Enter name'
+                                placeholder='Enter your thoughts...'
                             />
                             <ValidationError
                                 prefix="Message"

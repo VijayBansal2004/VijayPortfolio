@@ -25,9 +25,13 @@
     color: white !important;
     font-size: 1.1rem !important;
 
-    &:focus {
-        color: white !important;
-        background-color: transparent !important;
+    width: 100%;
+    border-radius: 7px;
+    margin-block: 5px;
+
+    &:focus, &:active {
+        /* color: white !important; */
+        /* background-color: transparent !important; */
         border: 2px solid #a86d0045 !important;
         box-shadow: 0 0 0 .25rem rgba(87, 38, 0, 0.25) !important;
     }
