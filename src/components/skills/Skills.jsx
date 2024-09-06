@@ -80,9 +80,9 @@ const Skills = () => {
     ]
 
     return (
-        <section id='#skills' className={`${styles.skillsContainer} containerBlockPadding text-center container`}>
+        <section id='skills' className={`${styles.skillsContainer} containerBlockPadding text-center container`}>
             <Heading heading="Skills" />
-
+            <h1 className='text-center mb-5'>Why Choose Me ?</h1>
             <p className={`${styles.scrollReveal}`}>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus sed eveniet aut soluta fugiat similique rem, quod voluptatum? Accusantium aut repellat sit error reprehenderit dignissimos quidem illum, molestias blanditiis? Eveniet.
             </p>

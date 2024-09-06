@@ -3,7 +3,7 @@ import styles from './Home.module.css'
 const Home = () => {
     return (
         <>
-            <section id='#home' className={`${styles.heroSection} ${styles.scrollZoomInAnimation}`}>
+            <section id='home' className={`${styles.heroSection} ${styles.scrollZoomInAnimation}`}>
                 <div className={`${styles.overlay} align-content-center`}>
                     <div className="container row justify-content-center align-items-center gap-3 mt-5">
                         <div className={`${styles.heroSectionImgContainer} col-12 col-lg-5`}>

@@ -1,9 +1,10 @@
 import React from 'react'
+import styles from "./Heading.module.css"
 
 const Heading = ({ heading }) => {
     return (
-        <div className='mb-5 text-center'>
-            <h1>{heading}</h1>
+        <div className={`${styles.headingStyles}`}>
+            <p>{heading}</p>
         </div>
     )
 }

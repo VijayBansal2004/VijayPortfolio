@@ -6,14 +6,16 @@ import Projects from "../projects/Projects"
 import ContactMe from "../contactMe/ContactMe"
 import Footer from "../footer/Footer"
 import styles from "./Layout.module.css"
+import AboutMe from '../aboutMe/AboutMe'
 
 const Layout = () => {
     return (
         <>
             <Header />
             <Home />
+            <AboutMe />
             <Skills />
-            <Projects/>
+            <Projects />
             <ContactMe />
             <Footer />
             <div className={`${styles.gotoHome}`}>

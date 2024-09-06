@@ -1,0 +1,8 @@
+.AboutMeContainer {
+    color: white;
+    min-height: 100vh;
+}
+
+.AboutMeImageContainer img {
+    width: 100%;
+}

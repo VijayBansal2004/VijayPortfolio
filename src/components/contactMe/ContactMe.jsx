@@ -7,7 +7,7 @@ import SocialMediaLinks from '../utilityComponents/socialMedia/SocialMediaLinks'
 
 const ContactMe = () => {
     return (
-        <section className={`${styles.contactMeContainer} text-white containerBlockPadding`}>
+        <section id='contactMe' className={`${styles.contactMeContainer} text-white containerBlockPadding`}>
             <div className="container d-flex flex-column flex-lg-row justify-content-between align-items-center">
                 <div className={`${styles.socialMedia} w-25 text-center`}>
                     <Heading heading="Social Media" />
@@ -17,6 +17,8 @@ const ContactMe = () => {
                 </div>
                 <div className={`${styles.formContainer} w-100`}>
                     <Heading heading="Contact Me" />
+                    <h1 className='text-center mb-2'>Get In Touch!</h1>
+
                     <Form className='d-grid gap-4'>
                         <div className="fadeUpAnimation">
                             <Form.Label htmlFor="inputPassword5">Enter Name</Form.Label>
@@ -40,7 +42,6 @@ const ContactMe = () => {
                             <Form.Label htmlFor="inputPassword5">Enter your comments</Form.Label>
                             <Form.Control
                                 as="textarea"
-                                placeholder="Leave a comment here"
                                 className={`${styles.formControl}`}
                                 style={{ height: '100px' }}
                             />

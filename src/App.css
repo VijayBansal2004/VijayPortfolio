@@ -1,51 +1,96 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=SUSE:wght@100..800&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    --oringe-color:#f26602;
+
+body {
+    --oringe-color: #f26602;
     /* background-color: #230000 !important; */
     background-color: black !important;
     font-family: "SUSE", sans-serif !important;
 }
 
-.container{
+.container {
     max-width: 1364px;
     margin: auto !important;
 }
 
-.containerBlockPadding{
+.containerBlockPadding {
     padding-block: 100px;
 }
 
 /* utilities */
-.primaryBtn{
+.primaryBtn {
     border: none !important;
-    background-color:var(--oringe-color) !important;
+    background-color: var(--oringe-color) !important;
     color: white !important;
     width: 9rem;
     padding: 10px !important;
     font-weight: 700 !important;
 
-    &:hover{
-        background-color:#f26602d4 !important;
+    &:hover {
+        background-color: #f26602d4 !important;
     }
 }
 
-.fadeUpAnimation{
-    animation:fadeUp linear forwards;
+.secondaryBtn {
+    border: none !important;
+    color: white !important;
+    width: 9rem;
+    padding: 10px !important;
+    font-weight: 700 !important;
+    border: 2px solid #f26602 !important;
+    background-color: transparent !important;
+
+    &:hover {
+        background-color: #f266024a !important;
+    }
+}
+
+.fadeUpAnimation {
+    animation: fadeUp linear forwards;
     animation-timeline: view();
     animation-range-start: 0vh;
     animation-range-end: 30vh;
-    scale:.7;
-    opacity:0;
+    scale: .7;
+    opacity: 0;
 }
 
 @keyframes fadeUp {
-    100%{
-        scale:1;
-        opacity:1;
+    100% {
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+.animatedIcon {
+    width: 60px;
+    position: absolute;
+    animation: rotateAnimation linear forwards;
+    animation-timeline: view();
+    animation-range: entry();
+}
+
+.animatedIcon img {
+    width: 100%;
+    animation: translateUpAnimation linear forwards;
+    animation-timeline: view();
+    animation-range: entry();
+    opacity: .5;
+}
+
+@keyframes rotateAnimation {
+    100% {
+        transform: rotate(360deg);
+        /* transform-origin: center; */
+    }
+}
+
+@keyframes translateUpAnimation {
+    100% {
+        /* transform: translateY(-500px); */
     }
 }
