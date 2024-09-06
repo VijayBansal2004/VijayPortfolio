@@ -8,6 +8,8 @@ import Footer from "../footer/Footer"
 import styles from "./Layout.module.css"
 import AboutMe from '../aboutMe/AboutMe'
 
+import Nav from 'react-bootstrap/Nav';
+
 const Layout = () => {
     return (
         <>
@@ -19,7 +21,7 @@ const Layout = () => {
             <ContactMe />
             <Footer />
             <div className={`${styles.gotoHome}`}>
-                <a href='#home' className="btn primaryBtn" type="text">^</a>
+                <Nav.Link href="#home" className="btn primaryBtn">^</Nav.Link>
             </div>
         </>
     )

@@ -92,7 +92,7 @@ const Projects = () => {
         <section id='projects' className={`${styles.projectSectionContainer}`}>
             <div className="container">
                 <Heading heading="Projects" />
-                <h1 className='text-center mb-5'>What Can I Do ?</h1>
+                <h1 className='text-center scrollReveal w-100 mb-5'>What Can I Do ?</h1>
                 <Tab.Container id="left-tabs-example" defaultActiveKey="allProjects" className={`${styles.projectContainer}`}>
                     <Row className='gap-5 gap-sm-0'>
                         <Col sm={3} lg={2}>

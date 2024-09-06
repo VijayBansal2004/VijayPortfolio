@@ -12,7 +12,7 @@ const AboutMe = () => {
 
             <div className="row justify-content-center align-items-center gap-3">
                 <div className={`${styles.AboutMeContentContainer} col-12 col-lg-5 d-flex flex-column justify-content-between`}>
-                    <h1 className='text-start mb-2'>Vijay Bansal</h1>
+                    <h1 className='text-start mb-2 scrollReveal w-100'>Vijay Bansal</h1>
                     <p className='text-start fadeUpAnimation'>I am a highly motivated and results-oriented Front-End Developer with expertise in HTML, CSS, Bootstrap, and React.js. I excel in creating responsive, visually compelling websites that focus on delivering seamless user experiences and driving engagement. With a solid understanding of modern web development technologies, I am adept at transforming complex requirements into efficient, scalable solutions. My passion for innovation and continuous learning drives me to stay updated with the latest industry trends, ensuring the delivery of cutting-edge digital experiences that align with business objectives.</p>
                     <div className="buttons d-flex align-items-center gap-2">
                         <a href="#contactMe">

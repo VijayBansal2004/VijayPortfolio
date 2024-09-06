@@ -94,3 +94,26 @@ body {
         /* transform: translateY(-500px); */
     }
 }
+
+
+/* background: radial-gradient(circle at 10% 20%, rgb(255, 197, 61) 0%, rgb(255, 94, 7) 90%); */
+
+.scrollReveal {
+    display: inline-block;
+    background: radial-gradient(circle at 10% 20%, rgb(255, 255, 255), rgb(255, 255, 255));
+    background-clip: text;
+    background-size: 0%;
+    background-repeat: no-repeat;
+    color: #ffffff3b;
+
+    animation: scrollReveal linear forwards;
+    animation-timeline: view();
+    animation-range-start: contain 0vh;
+    animation-range-end: contain 40vh;
+}
+
+@keyframes scrollReveal {
+    100% {
+        background-size: 100%;
+    }
+}

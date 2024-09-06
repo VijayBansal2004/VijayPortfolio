@@ -1,25 +1,30 @@
-::root{
-    --oringe-color:#f26602;
-    --oringe-fade:#f26602d4;
+::root {
+    --oringe-color: #f26602;
+    --oringe-fade: #f26602d4;
 }
 
-.textColor{
+.textColor {
     color: var(--oringe-color) !important;
 }
 
-.navlinkContainer{
+.navlinkContainer {
     width: 100%;
     justify-content: center;
 }
 
 
-.navlink{
+.navlink {
     font-size: 1.1rem !important;
     padding: 17px !important;
-    font-weight:500 !important;
+    font-weight: 500 !important;
     position: relative;
+    transition: all .2s ease-in-out;
 
-    &::after{
+    &:hover {
+        color: #ffc49a !important;
+    }
+
+    &::after {
         content: "";
         position: absolute;
         width: 0px;
@@ -28,14 +33,14 @@
         bottom: 0;
         left: 0;
     }
-    
-    &:hover::after{
+
+    &:hover::after {
         animation: navlinkAnimation .2s ease-in forwards;
     }
 }
 
 @keyframes navlinkAnimation {
-    100%{
+    100% {
         width: 100%;
     }
 }
@@ -48,8 +53,8 @@
 .navbar {
     --bs-navbar-toggler-focus-width: 0;
 
-    --animation-start:101vh;
-    --animation-duration:160vh;
+    --animation-start: 101vh;
+    --animation-duration: 160vh;
 
     position: sticky !important;
     top: -10%;
@@ -60,16 +65,16 @@
     animation-timeline: view();
     animation-range-start: var(--animation-start);
     animation-range-end: var(--animation-duration);
-    
-    &::after{
+
+    &::after {
         content: "";
         position: absolute;
         bottom: 0;
         left: 0;
         width: 0%;
-        height:3px;
+        height: 3px;
         background-color: var(--oringe-color);
-        
+
         animation: navloadingBar .5s linear forwards;
         animation-timeline: scroll();
         animation-range: entry();
@@ -78,17 +83,17 @@
 
 
 @keyframes animatedNavbar {
-    100%{
-        background-color:#290500db;
+    100% {
+        background-color: #290500db;
         top: 0;
         color: black;
     }
-    
+
 }
 
 
 @keyframes navloadingBar {
-    100%{
+    100% {
         width: 100%;
     }
 }
