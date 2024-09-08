@@ -26,6 +26,10 @@ const Home = () => {
             imgURL: "../../../public/images/overlapedSqrs.png",
             imgName: "overlapedSqrs",
         },
+        {
+            imgURL: "../../../public/images/linedCircle.png",
+            imgName: "linedCircle",
+        },
     ]
 
     return (

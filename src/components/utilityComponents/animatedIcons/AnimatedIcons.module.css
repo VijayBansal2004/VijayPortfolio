@@ -25,10 +25,24 @@
 .overlapedSqrs {
     width: 50px;
     right: 1%;
-    animation: upDown 8s linear infinite;
+    animation: upDown 8s alternate infinite;
+}
+
+.linedCircle{
+    width: 150px;
+    bottom: 0;
+    right: 0;
+    /* animation: rotate 8s linear infinite; */
+    animation: scaleUpDown 8s alternate infinite;
 }
 
 /* Keyframes */
+
+@keyframes scaleUpDown {
+    100% {
+        scale: 1.5;
+    }
+}
 
 @keyframes rotate {
     100% {
