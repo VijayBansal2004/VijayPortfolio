@@ -27,48 +27,6 @@ const ContactMe = () => {
                     <Heading heading="Contact Me" />
                     <h1 className='text-center mb-2 scrollReveal w-100'>Get In Touch!</h1>
 
-                    {/* <Form className='d-grid gap-4' onSubmit={handleSubmit}>
-                        <div className="fadeUpAnimation">
-                            <Form.Label htmlFor="inputPassword5">Enter Name</Form.Label>
-                            <Form.Control
-                                type="text"
-                                id="userName"
-                                aria-describedby="passwordHelpBlock"
-                                className={`${styles.formControl}`}
-                            />
-
-                        </div>
-                        <div className="fadeUpAnimation">
-                            <Form.Label htmlFor="inputPassword5">Enter Email</Form.Label>
-                            <Form.Control
-                                type="email"
-                                id="userEmail"
-                                aria-describedby="passwordHelpBlock"
-                                className={`${styles.formControl}`}
-                            />
-                            <ValidationError
-                                prefix="Email"
-                                field="email"
-                                errors={state.errors}
-                            />
-                        </div>
-                        <div className="fadeUpAnimation">
-                            <Form.Label htmlFor="inputPassword5">Enter your comments</Form.Label>
-                            <Form.Control
-                                as="textarea"
-                                className={`${styles.formControl}`}
-                                style={{ height: '100px' }}
-                            />
-                            <ValidationError
-                                prefix="Message"
-                                field="message"
-                                errors={state.errors}
-                            />
-                        </div>
-                        <Button className="primaryBtn w-100 fadeUpAnimation" type="submit" size="lg" disabled={state.submitting}>Submit</Button>
-                        </Form> */}
-
-
                     <form className={`${styles.contactFeildContainer}`} onSubmit={handleSubmit}>
                         <div className="fadeUpAnimation">
                             {/* <label htmlFor="name">

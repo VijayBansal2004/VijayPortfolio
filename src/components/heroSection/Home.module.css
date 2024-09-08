@@ -2,6 +2,7 @@
     background: url(../../../public/images/blurry-shape-2.svg);
     min-height: 100vh;
     background-size: cover;
+    background-position: center;
     margin-top: -10vh;
     position: relative;
 }
