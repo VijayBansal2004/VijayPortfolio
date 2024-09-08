@@ -1,8 +1,25 @@
+.contactMeContainer{
+    min-height: 100vh;
+    position: relative;
+    
+    &::before{
+        content: "";
+        position: absolute;
+        z-index: 0;
+        background: url(../../../public/images/blurry-shape-2.svg);
+        background-size: cover;
+        opacity: 0.3;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
 .socialMedia {
     position: sticky;
     top: 10vh;
 }
-
 
 .formContainer {
     background-color: #23040066;

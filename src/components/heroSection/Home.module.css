@@ -1,17 +1,17 @@
 .heroSection {
-    background: url(../../../public/images/vibrant-network-digital-connections.jpg);
-    height: 100vh;
+    background: url(../../../public/images/blurry-shape-2.svg);
+    min-height: 100vh;
     background-size: cover;
     margin-top: -10vh;
     position: relative;
 }
 
 .overlay {
-    height: 100%;
+    min-height: 100vh;
     background-color: #000000b0;
 }
 
-.heroImgbackground {
+/* .heroImgbackground {
     position: relative;
 }
 
@@ -27,13 +27,29 @@
     bottom: 0px;
     right: 0;
     left: 54px;
-}
+} */
 
 .heroImg {
-    border-radius: 0px 0px 347px 326px;
-    width: 100%;
+    width: 500px;
+    height: 500px;
+    margin: auto;
     position: relative;
-    z-index: 1;
+    background: url(/public/images/vijay-resume-img3.png) center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* border-radius: 0px 0px 400px 400px; */
+
+    &::before{
+        content: "";
+        position: absolute;
+        background-color: #f26602;
+        border-radius: 815px;
+        bottom: 7px;
+        left: 42px;
+        width: 85%;
+        height: 85%;
+        z-index: -1;
+    }
 }
 
 .heroSectionDetailsContainer {
@@ -145,3 +161,16 @@
 
     }
 } */
+
+@media(max-width:590px){
+    .heroImg {
+        width: 280px;
+
+        &::before{
+            bottom: 101px;
+            left: 15px;
+            width: 250px;
+            height: 250px;
+        }
+    }
+}

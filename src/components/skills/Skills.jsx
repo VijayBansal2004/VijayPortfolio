@@ -80,28 +80,30 @@ const Skills = () => {
     ]
 
     return (
-        <section id='skills' className={`${styles.skillsContainer} containerBlockPadding text-center container`}>
-            <Heading heading="Skills" />
-            <h1 className='text-center mb-5 scrollReveal w-100'>Why Choose Me ?</h1>
-            <p className={`${styles.scrollReveal}`}>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus sed eveniet aut soluta fugiat similique rem, quod voluptatum? Accusantium aut repellat sit error reprehenderit dignissimos quidem illum, molestias blanditiis? Eveniet.
-            </p>
+        <section id='skills' className={`${styles.skillsSection}`}>
+            <div className={`${styles.skillsContainer} containerBlockPadding text-center container`}>
+                <Heading heading="Skills" />
+                <h1 className='text-center mb-5 scrollReveal w-100'>Why Choose Me ?</h1>
+                <p className={`${styles.scrollReveal}`}>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus sed eveniet aut soluta fugiat similique rem, quod voluptatum? Accusantium aut repellat sit error reprehenderit dignissimos quidem illum, molestias blanditiis? Eveniet.
+                </p>
 
-            <div className={styles.skillContainer}>
-                {
-                    skills.map((element, index) => (<SkillContainer styles={styles.skillLogo} element={element} key={index} />))
-                }
-            </div>
-
-            <div className={`${styles.skillsPercentage} row`}>
-                <div className="col-12 col-lg-6">
-                    <h2 class={`${styles.skillsPercentageHeading}`}>Technologies</h2>
+                <div className={styles.skillContainer}>
+                    {
+                        skills.map((element, index) => (<SkillContainer styles={styles.skillLogo} element={element} key={index} />))
+                    }
                 </div>
 
-                <div className={` col-12 col-lg-6`}>
-                    {
-                        skillPercentage.map((element, index) => (<SkillsPercentage element={element} key={index} />))
-                    }
+                <div className={`${styles.skillsPercentage} row`}>
+                    <div className="col-12 col-lg-6">
+                        <h2 class={`${styles.skillsPercentageHeading}`}>Technologies</h2>
+                    </div>
+
+                    <div className={` col-12 col-lg-6`}>
+                        {
+                            skillPercentage.map((element, index) => (<SkillsPercentage element={element} key={index} />))
+                        }
+                    </div>
                 </div>
             </div>
         </section>
