@@ -10,7 +10,7 @@
     color: white;
     background-color: #f26602;
 }
-  
+
 
 body {
     --oringe-color: #f26602;
@@ -163,8 +163,10 @@ body {
     }
 }
 
-@media(max-width:500px){
-    .primaryBtn,.secondaryBtn{
+@media(max-width:500px) {
+
+    .primaryBtn,
+    .secondaryBtn {
         width: 8rem;
     }
 }

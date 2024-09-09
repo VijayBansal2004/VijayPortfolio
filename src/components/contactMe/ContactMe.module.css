@@ -1,8 +1,8 @@
-.contactMeContainer{
+.contactMeContainer {
     min-height: 100vh;
     position: relative;
-    
-    &::before{
+
+    &::before {
         content: "";
         position: absolute;
         z-index: 0;
@@ -30,7 +30,7 @@
     /* border-radius: 20px; */
 }
 
-.contactFeildContainer{
+.contactFeildContainer {
     display: grid;
     gap: 20px;
 }
@@ -46,7 +46,8 @@
     border-radius: 7px;
     margin-block: 5px;
 
-    &:focus, &:active {
+    &:focus,
+    &:active {
         /* color: white !important; */
         /* background-color: transparent !important; */
         border: 2px solid #a86d0045 !important;
@@ -54,7 +55,7 @@
     }
 }
 
-@media(max-width:991px){
+@media(max-width:991px) {
     .socialMedia {
         position: static;
         top: 10vh;
