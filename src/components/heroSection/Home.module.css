@@ -80,6 +80,25 @@
 .typedText {
     font-weight: 900;
     color: #f26602;
+    display: inline-block;
+    min-width: 160px;
+    text-align: start;
+}
+
+@media(max-width:500px){
+    .hello {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+    .myName {
+        font-size: 2.7rem;
+    }
+    .SkilledAtContainer {
+        font-size: 1.7rem;
+    }
+    .typedText {
+        min-width: 143px;
+    }
 }
 
 @media(max-width:590px) {
@@ -94,3 +113,4 @@
         }
     }
 }
+

@@ -44,13 +44,13 @@ const Home = () => {
                     }
 
                     <div className="container row justify-content-center align-items-center gap-3 mt-5 flex-wrap-reverse">
-                        <div className={`${styles.heroSectionDetailsContainer} col-12 col-lg-5`}>
+                        <div className={`${styles.heroSectionDetailsContainer} col-12 col-lg-5 text-center text-lg-start`}>
                             <p className={`${styles.hello}`}>Hello, I am</p>
                             <h1 className={`${styles.myName}`}>Vijay Bansal</h1>
                             <p className={`${styles.role}`}>Front-End Developer</p>
-                            <p className={`${styles.SkilledAtContainer}`}>Skilled at <span className={`${styles.typedText}`}>{text}</span><span className={`${styles.typedCursor}`}><Cursor /></span></p>
+                            <p className={`${styles.SkilledAtContainer}`}>Skilled at <span className={`${styles.typedText}`}>{text}<Cursor /></span></p>
                             <p>Welcome to my portfolio, a curated collection of my professional journey and creative endeavors.</p>
-                            <div className="buttons d-flex align-items-center gap-2">
+                            <div className="buttons d-flex align-items-center gap-2 justify-content-center justify-content-lg-start">
                                 <a href="#contactMe">
                                     <Button className="secondaryBtn fadeUpAnimation" type="button" size="lg">Contact Me</Button>
                                 </a>
