@@ -5,7 +5,7 @@ import { Button } from 'react-bootstrap'
 
 const AboutMe = () => {
     return (
-        <div id='aboutMe' className={`${styles.AboutMeContainer} containerBlockPadding text-center container`}>
+        <div id='aboutMe' className={`${styles.AboutMeContainer} containerBlockPadding text-center container align-content-center`}>
             <div className='mb-5'>
                 <Heading heading="About Me" />
             </div>

@@ -15,7 +15,7 @@ const ContactMe = () => {
     }
 
     return (
-        <section id='contactMe' className={`${styles.contactMeContainer} text-white containerBlockPadding`}>
+        <section id='contactMe' className={`${styles.contactMeContainer} text-white containerBlockPadding align-content-center`}>
             <div className="container d-flex flex-column flex-lg-row justify-content-between align-items-center gap-5 gap-lg-0">
                 <div className={`${styles.socialMedia} text-center`}>
                     <Heading heading="Social Media" />
