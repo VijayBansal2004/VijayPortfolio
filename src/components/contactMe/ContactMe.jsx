@@ -11,7 +11,7 @@ const ContactMe = () => {
     const [state, handleSubmit] = useForm("mblrbzgl");
 
     if (state.succeeded) {
-        return console.log("Form has been submitted!!");
+        return <p className='fw-bold text-success display-6 text-center'>Thank you for contacting Me!</p>
     }
 
     return (
