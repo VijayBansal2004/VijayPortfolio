@@ -98,27 +98,27 @@ const Projects = () => {
                         <Col sm={3} lg={2}>
                             <Nav variant="pills" className={`flex-column ${styles.projectNavContainer}`}>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="allProjects">All Projects</Nav.Link>
+                                    <Nav.Link eventKey="allProjects" className={`${styles.primaryColor}`}>All Projects</Nav.Link>
                                 </Nav.Item>
 
                                 <Nav.Item>
-                                    <Nav.Link eventKey="remittance">Remittance</Nav.Link>
+                                    <Nav.Link eventKey="remittance" className={`${styles.primaryColor}`}>Remittance</Nav.Link>
                                 </Nav.Item>
 
                                 <Nav.Item>
-                                    <Nav.Link eventKey="blockchain">Blockchain</Nav.Link>
+                                    <Nav.Link eventKey="blockchain" className={`${styles.primaryColor}`}>Blockchain</Nav.Link>
                                 </Nav.Item>
 
                                 <Nav.Item>
-                                    <Nav.Link eventKey="trading">Trading</Nav.Link>
+                                    <Nav.Link eventKey="trading" className={`${styles.primaryColor}`}>Trading</Nav.Link>
                                 </Nav.Item>
 
                                 <Nav.Item>
-                                    <Nav.Link eventKey="fantasy">Fantasy</Nav.Link>
+                                    <Nav.Link eventKey="fantasy" className={`${styles.primaryColor}`}>Fantasy</Nav.Link>
                                 </Nav.Item>
 
                                 <Nav.Item>
-                                    <Nav.Link eventKey="funProjects">Fun Projects</Nav.Link>
+                                    <Nav.Link eventKey="funProjects" className={`${styles.primaryColor}`}>Fun Projects</Nav.Link>
                                 </Nav.Item>
                             </Nav>
                         </Col>

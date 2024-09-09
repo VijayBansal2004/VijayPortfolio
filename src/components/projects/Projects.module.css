@@ -24,3 +24,12 @@
         justify-content: center;
     }
 }
+
+.primaryColor{
+    color: white !important;
+    font-weight: 600;
+}
+
+.primaryColor[aria-selected="true"]{
+    background-color: #f26602 !important;
+}
