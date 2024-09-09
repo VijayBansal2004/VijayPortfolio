@@ -27,3 +27,33 @@
         gap: 10px;
     }
 }
+
+.navlink {
+    font-size: 1.1rem !important;
+    position: relative;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        color: #ffc49a !important;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 0px;
+        height: 2px;
+        background-color: var(--oringe-color);
+        bottom: 0;
+        left: 0;
+    }
+
+    &:hover::after {
+        animation: navlinkAnimation .2s ease-in forwards;
+    }
+}
+
+@keyframes navlinkAnimation {
+    100% {
+        width: 100%;
+    }
+}
