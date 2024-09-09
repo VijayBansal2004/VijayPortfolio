@@ -12,35 +12,17 @@
     background-color: #000000b0;
 }
 
-/* .heroImgbackground {
-    position: relative;
-}
-
-.heroImgbackground::before {
-    content: "";
-    position: absolute;
-    background-color: #f26602;
-    z-index: 0;
-    border-radius: 200px;
-    width: 400px;
-    height: 400px;
-    top: 0;
-    bottom: 0px;
-    right: 0;
-    left: 54px;
-} */
-
 .heroImg {
     width: 500px;
     height: 500px;
     margin: auto;
     position: relative;
-    background: url(/public/images/vijay-resume-img3.png) center center;
+    /* background: url(/public/images/vijay-resume-img3.png) center center; */
     background-size: contain;
     background-repeat: no-repeat;
     /* border-radius: 0px 0px 400px 400px; */
 
-    &::before{
+    &::before {
         content: "";
         position: absolute;
         background-color: #f26602;
@@ -100,74 +82,11 @@
     color: #f26602;
 }
 
-
-
-
-/* Home page icons animation */
-
-/* animation: rotate 5s linear infinite; */
-/* animation: upDown 5s linear infinite alternate; */
-/* animation: leftRight 5s linear infinite alternate; */
-
-/* .animatedIcon {
-    position: absolute;
-    opacity: .4;
-} */
-
-/* .plus {
-    width: 50px;
-    left: 1%;
-    top: 10vh;
-    animation: rotate 8s linear infinite;
-}
-
-.strockedSqr {
-    width: 50px;
-    bottom: 1%;
-    animation: rotate 8s linear infinite;
-}
-
-.overlapedSqrs {
-    width: 50px;
-    right: 1%;
-    animation: upDown 8s linear infinite;
-} */
-
-/* Keyframes */
-
-/* @keyframes rotate {
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes upDown {
-    0% {
-        transform: translateY(30px);
-    }
-
-    100% {
-        transform: translateY(-30px);
-
-    }
-}
-
-@keyframes leftRight {
-    0% {
-        transform: translateX(30px);
-    }
-
-    100% {
-        transform: translateX(-30px);
-
-    }
-} */
-
-@media(max-width:590px){
+@media(max-width:590px) {
     .heroImg {
         width: 280px;
 
-        &::before{
+        &::before {
             bottom: 101px;
             left: 15px;
             width: 250px;

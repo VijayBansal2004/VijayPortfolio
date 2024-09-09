@@ -1,8 +1,8 @@
 .skillsSection {
     min-height: 100vh;
     position: relative;
-    
-    &::before{
+
+    &::before {
         content: "";
         position: absolute;
         z-index: 0;
@@ -21,29 +21,6 @@
     color: white;
 }
 
-/* background: radial-gradient(circle at 10% 20%, rgb(255, 197, 61) 0%, rgb(255, 94, 7) 90%); */
-
-/* .scrollReveal{
-    display: inline;
-    background: radial-gradient(circle at 10% 20%, rgb(255, 255, 255), rgb(255, 255, 255));
-    background-clip: text;
-    background-size:0% 100%;
-    background-repeat: no-repeat;
-    color: #ffffff3b;
-    
-    animation: scrollReveal linear forwards;
-    animation-timeline: view();
-    animation-range:entry();
-    animation-range-end: 50%;
-}
-
-@keyframes scrollReveal {
-    100%{
-        background-size:100% 100%;
-    }
-} */
-
-
 /* Skill container */
 .skillContainer {
     display: flex;
@@ -59,13 +36,18 @@
 .skillLogo {
     width: 70px !important;
     height: 70px !important;
-    animation: skillsScroll linear forwards;
-    animation-timeline: scroll(root);
     filter: brightness(0.6);
     transition: all .1s ease-in-out;
 
     &:hover {
         filter: brightness(1);
+    }
+}
+
+@media(prefers-reduced-motion: no-preference) {
+    .skillLogo {
+        animation: skillsScroll linear forwards;
+        animation-timeline: scroll(root);
     }
 }
 
@@ -114,19 +96,7 @@
     background-color: #f26602;
     height: 5px;
     border-radius: 10px;
-
-    /* animation: skillPercentageBar linear forwards;
-    animation-timeline: view();
-    animation-range-start:10%;
-    animation-range-end:50%; */
 }
-
-/* @keyframes skillPercentageBar {
-    100%{
-        width: 100%;
-    }   
-} */
-
 
 @media(max-width:992px) {
     .skillContainer {

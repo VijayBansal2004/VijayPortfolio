@@ -55,29 +55,33 @@
 
     --animation-start: 101vh;
     --animation-duration: 160vh;
-
     position: sticky !important;
-    top: -10%;
+    top: 0;
     padding: 0 !important;
     z-index: 100;
+}
 
-    animation: animatedNavbar .5s linear forwards;
-    animation-timeline: view();
-    animation-range-start: var(--animation-start);
-    animation-range-end: var(--animation-duration);
+@media(prefers-reduced-motion: no-preference) {
+    .navbar {
+        top: -10%;
+        animation: animatedNavbar .5s linear forwards;
+        animation-timeline: view();
+        animation-range-start: var(--animation-start);
+        animation-range-end: var(--animation-duration);
 
-    &::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 0%;
-        height: 3px;
-        background-color: var(--oringe-color);
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            height: 3px;
+            background-color: var(--oringe-color);
 
-        animation: navloadingBar .5s linear forwards;
-        animation-timeline: scroll();
-        animation-range: entry();
+            animation: navloadingBar .5s linear forwards;
+            animation-timeline: scroll();
+            animation-range: entry();
+        }
     }
 }
 

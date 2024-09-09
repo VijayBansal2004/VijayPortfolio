@@ -52,11 +52,6 @@
         background-size: 100% 100%;
         background-repeat: no-repeat;
         color: #ffffff3b;
-
-        /* animation: scrollReveal linear forwards;
-        animation-timeline: scroll(root);
-        animation-range-start: 30%;
-        animation-range-end: 50%; */
     }
 
     .projectCardDetails {
@@ -64,13 +59,6 @@
         font-weight: 500;
     }
 }
-
-/* @keyframes scrollReveal {
-    100% {
-        background-size: 100% 100%;
-    }
-} */
-
 
 @media(max-width:990px) {
     .projectCard {
