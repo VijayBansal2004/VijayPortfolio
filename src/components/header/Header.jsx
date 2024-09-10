@@ -4,6 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import styles from './Header.module.css';
+import { NavLink } from 'react-bootstrap';
 const Header = () => {
     return (
         <Navbar collapseOnSelect expand="lg" className={styles.navbar}>
@@ -12,14 +13,14 @@ const Header = () => {
                 <Navbar.Toggle className={`${styles.hamburger}`} aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className={` ${styles.navlinkContainer}`}>
-                        <Nav.Link href="#home" className={`text-white ${styles.navlink}`}>Home</Nav.Link>
-                        <Nav.Link href="#aboutMe" className={`text-white ${styles.navlink}`}>About Me</Nav.Link>
-                        <Nav.Link href="#skills" className={`text-white ${styles.navlink}`}>Skills</Nav.Link>
-                        <Nav.Link href="#projects" className={`text-white ${styles.navlink}`}>Projects</Nav.Link>
-                        <Nav.Link href="#contactMe" className={`text-white ${styles.navlink}`}>Contact Me</Nav.Link>
+                        <NavLink href="#home" className={`text-white ${styles.navlink}`}>Home</NavLink>
+                        <NavLink href="#aboutMe" className={`text-white ${styles.navlink}`}>About Me</NavLink>
+                        <NavLink href="#skills" className={`text-white ${styles.navlink}`}>Skills</NavLink>
+                        <NavLink href="#projects" className={`text-white ${styles.navlink}`}>Projects</NavLink>
+                        <NavLink href="#contactMe" className={`text-white ${styles.navlink}`}>Contact Me</NavLink>
                     </Nav>
                     <Form className="d-flex">
-                        <Nav.Link href="#contactMe" className={`text-white`}><Button className="primaryBtn">Let's Connect</Button></Nav.Link>
+                        <NavLink href="#contactMe" className={`text-white`}><Button className="primaryBtn">Let's Connect</Button></NavLink>
                     </Form>
                 </Navbar.Collapse>
             </Container>
