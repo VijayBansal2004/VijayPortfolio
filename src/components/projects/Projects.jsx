@@ -84,6 +84,18 @@ const Projects = () => {
             title: 'Word Formatter',
             discription: 'This app transforms user entered text!',
         },
+        {
+            imagePath: '../../../public/images/todoApp.png',
+            websiteURL: "https://github.com/VijayBansal2004/todo-app",
+            title: 'Todo App',
+            discription: 'Save your todos here!',
+        },
+        {
+            imagePath: '../../../public/images/passwordManager.png',
+            websiteURL: "https://github.com/VijayBansal2004/password-manager-app",
+            title: 'Password Manager App',
+            discription: 'Save your Id, Password here!',
+        },
     ];
 
     const allProjects = [...remittanceContent, ...blockchainContent, ...tradingContent, ...fantasyContent, ...funProjectsContent];
