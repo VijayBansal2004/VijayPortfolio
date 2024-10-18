@@ -5,9 +5,35 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React</title>
+    <style>
+      .wgl-canvas-outer {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: -1;
+          opacity: 0.6;
+      }
+
+      .wgl-canvas-outer canvas {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          display: inline-block;
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>
+    <div class="wgl-canvas-outer">
+      <canvas id="wgl-webgl-fluid" width="2880" height="1268"></canvas>
+    </div>
+    <script src="./webgl_fluid_settings.js" defer></script>
+    <script src="./jQuery_v3_6_0_cdn.js" defer></script>
+    <script src="./cursor_animation.js" defer></script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
