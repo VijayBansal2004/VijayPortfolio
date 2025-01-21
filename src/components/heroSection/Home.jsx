@@ -19,15 +19,15 @@ const Home = () => {
             imgName: "plus",
         },
         {
-            imgURL: "../../../public/images/strockedSqr.png",
+            imgURL: "../../../public/images/strockedSqr.webp",
             imgName: "strockedSqr",
         },
         {
-            imgURL: "../../../public/images/overlapedSqrs.png",
+            imgURL: "../../../public/images/overlapedSqrs.webp",
             imgName: "overlapedSqrs",
         },
         // {
-        //     imgURL: "../../../public/images/linedCircle.png",
+        //     imgURL: "../../../public/images/linedCircle.webp",
         //     imgName: "linedCircle",
         // },
     ]
@@ -65,7 +65,7 @@ const Home = () => {
 
                             <div className={`${styles.heroImg}`}></div>
 
-                            {/* <img className={`${styles.heroImg}`} src="../../../public/images/employee.png" alt="hero img" /> */}
+                            {/* <img className={`${styles.heroImg}`} src="../../../public/images/employee.webp" alt="hero img" /> */}
                             {/* </div> */}
                         </div>
                     </div>

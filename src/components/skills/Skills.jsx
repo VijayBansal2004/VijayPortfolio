@@ -29,6 +29,12 @@ const Skills = () => {
             imgPath: "../../../public/images/cssLogo.svg",
         },
         {
+            imgPath: "../../../public/images/gitLogo.svg",
+        },
+        {
+            imgPath: "../../../public/images/githubLogo.svg",
+        },
+        {
             imgPath: "../../../public/images/illustratorLogo.svg",
         },
         {

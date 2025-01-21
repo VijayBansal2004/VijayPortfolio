@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from './Projects.module.css'
 import ProjectCard from "./ProjectCard"
-
 import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
 import Row from 'react-bootstrap/Row';
@@ -12,13 +11,13 @@ const Projects = () => {
 
     const remittanceContent = [
         {
-            imagePath: '../../../public/images/kantipur.png',
+            imagePath: '../../../public/images/kantipur.webp',
             websiteURL: "https://vijaybansal2004.github.io/Kantipur-Rimit",
             title: 'Kantipur Remit',
             discription: 'Send money to Nepal with Kantipur Remit !',
         },
         {
-            imagePath: '../../../public/images/clearPath.png',
+            imagePath: '../../../public/images/clearPath.webp',
             websiteURL: "https://vijaybansal2004.github.io/clearpath",
             title: 'ClearPath Remit',
             discription: 'Save up to 3x on international transfers across more than 50 currencies, with no hidden fees.',
@@ -27,13 +26,13 @@ const Projects = () => {
 
     const blockchainContent = [
         {
-            imagePath: '../../../public/images/tronWolf.png',
+            imagePath: '../../../public/images/tronWolf.webp',
             websiteURL: "https://vijaybansal2004.github.io/TronWolf",
             title: 'TronWolf',
             discription: 'DISCOVER YOUR INNER BEAST AND MAKE YOUR WOLFPACK HOWL!',
         },
         {
-            imagePath: '../../../public/images/axiBloc.png',
+            imagePath: '../../../public/images/axiBloc.webp',
             websiteURL: "https://axibloc.netlify.app",
             title: 'Axibloc',
             discription: 'Achieving enduring performance for mission-critical priorities',
@@ -42,22 +41,28 @@ const Projects = () => {
 
     const tradingContent = [
         {
-            imagePath: '../../../public/images/equiX.png',
+            imagePath: '../../../public/images/equiX.webp',
             websiteURL: "https://vijaybansal2004.github.io/EquiX",
             title: 'EquiX',
             discription: `Trade with the world's largest retail broker and enjoy superior market conditions.`,
+        },
+        {
+            imagePath: '../../../public/images/crypto.webp',
+            websiteURL: "https://vijaybansal2004.github.io/crypto/",
+            title: 'Crypto',
+            discription: `Partner with the world’s largest retail broker and take advantage of exceptional market conditions.`,
         },
     ];
 
     const fantasyContent = [
         {
-            imagePath: '../../../public/images/super11.png',
+            imagePath: '../../../public/images/super11.webp',
             websiteURL: "https://vijaybansal2004.github.io/Super11",
             title: 'Super11',
             discription: 'GETTING STARTED WITH SUPER11 IS A BREEZE!',
         },
         {
-            imagePath: '../../../public/images/super11.png',
+            imagePath: '../../../public/images/super11.webp',
             websiteURL: "https://vijaybansal2004.github.io/Super11-scrolling",
             title: 'Super11-scrolling',
             discription: 'GETTING STARTED WITH SUPER11 IS A BREEZE!',
@@ -67,31 +72,31 @@ const Projects = () => {
 
     const funProjectsContent = [
         {
-            imagePath: '../../../public/images/reactForm.png',
+            imagePath: '../../../public/images/reactForm.webp',
             websiteURL: "https://github.com/VijayBansal2004/useForm---React",
             title: 'User From',
             discription: 'This form validates user input data',
         },
         {
-            imagePath: '../../../public/images/guessTheNumber.png',
+            imagePath: '../../../public/images/guessTheNumber.webp',
             websiteURL: "https://github.com/VijayBansal2004/guess-the-number",
             title: 'Guess the Number',
             discription: 'In this game the user has to guess the computer generated random number',
         },
         {
-            imagePath: '../../../public/images/wordFormatter.png',
+            imagePath: '../../../public/images/wordFormatter.webp',
             websiteURL: "https://github.com/VijayBansal2004/wordFormatter",
             title: 'Word Formatter',
             discription: 'This app transforms user entered text!',
         },
         {
-            imagePath: '../../../public/images/todoApp.png',
+            imagePath: '../../../public/images/todoApp.webp',
             websiteURL: "https://github.com/VijayBansal2004/todo-app",
             title: 'Todo App',
             discription: 'Save your todos here!',
         },
         {
-            imagePath: '../../../public/images/passwordManager.png',
+            imagePath: '../../../public/images/passwordManager.webp',
             websiteURL: "https://github.com/VijayBansal2004/password-manager-app",
             title: 'Password Manager App',
             discription: 'Save your Id, Password here!',
@@ -140,7 +145,7 @@ const Projects = () => {
                                     <div className={`${styles.projectCardContainer}`}>
                                         {
                                             allProjects.map((element) => (
-                                                <ProjectCard content={element} />
+                                                <ProjectCard key={element.title} content={element} />
                                             ))
                                         }
                                     </div>
@@ -151,7 +156,7 @@ const Projects = () => {
                                     <div className={`${styles.projectCardContainer}`}>
                                         {
                                             remittanceContent.map((element) => (
-                                                <ProjectCard content={element} />
+                                                <ProjectCard key={element.title} content={element} />
                                             ))
                                         }
                                     </div>
@@ -161,7 +166,7 @@ const Projects = () => {
                                     <div className={`${styles.projectCardContainer}`}>
                                         {
                                             blockchainContent.map((element) => (
-                                                <ProjectCard content={element} />
+                                                <ProjectCard key={element.title} content={element} />
                                             ))
                                         }
                                     </div>
@@ -171,7 +176,7 @@ const Projects = () => {
                                     <div className={`${styles.projectCardContainer}`}>
                                         {
                                             tradingContent.map((element) => (
-                                                <ProjectCard content={element} />
+                                                <ProjectCard key={element.title} content={element} />
                                             ))
                                         }
                                     </div>
@@ -181,7 +186,7 @@ const Projects = () => {
                                     <div className={`${styles.projectCardContainer}`}>
                                         {
                                             fantasyContent.map((element) => (
-                                                <ProjectCard content={element} />
+                                                <ProjectCard key={element.title} content={element} />
                                             ))
                                         }
                                     </div>
@@ -191,7 +196,7 @@ const Projects = () => {
                                     <div className={`${styles.projectCardContainer}`}>
                                         {
                                             funProjectsContent.map((element) => (
-                                                <ProjectCard content={element} />
+                                                <ProjectCard key={element.title} content={element} />
                                             ))
                                         }
                                     </div>

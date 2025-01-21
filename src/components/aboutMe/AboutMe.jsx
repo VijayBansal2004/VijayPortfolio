@@ -24,7 +24,7 @@ const AboutMe = () => {
                     </div>
                 </div>
                 <div className={`${styles.AboutMeImageContainer} fadeUpAnimation col-12 col-lg-5`}>
-                    <img src="../../../public/images/post1.png" alt="hero img" />
+                    <img src="../../../public/images/post1.webp" alt="hero img" />
                 </div>
             </div>
 
