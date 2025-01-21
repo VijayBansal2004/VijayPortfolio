@@ -9,6 +9,7 @@ import styles from "./Layout.module.css"
 import AboutMe from '../aboutMe/AboutMe'
 
 import Nav from 'react-bootstrap/Nav';
+// import Blogs from '../blogs/Blogs'
 
 const Layout = () => {
     return (
@@ -19,6 +20,7 @@ const Layout = () => {
             <Skills />
             <Projects />
             <ContactMe />
+            {/* <Blogs /> */}
             <Footer />
             <div className={`${styles.gotoHome}`}>
                 <Nav.Link href="#home" className="btn primaryBtn">^</Nav.Link>
