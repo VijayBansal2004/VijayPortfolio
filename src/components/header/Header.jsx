@@ -4,15 +4,13 @@ import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import styles from './Header.module.css';
-// import { NavLink } from 'react-bootstrap';
-
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
     return (
         <Navbar collapseOnSelect expand="lg" className={styles.navbar}>
             <Container className="pb-3 pb-lg-0">
-                <Navbar.Brand href="#home" className={`${styles.textColor} fw-bolder fs-1`}>Vijay</Navbar.Brand>
+                <NavLink to="/" className={`${styles.textColor}  ${styles.brandLogo} fw-bolder fs-1 `}>Vijay</NavLink>
                 <Navbar.Toggle className={`${styles.hamburger}`} aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className={` ${styles.navlinkContainer}`}>

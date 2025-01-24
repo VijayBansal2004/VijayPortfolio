@@ -12,6 +12,9 @@
     justify-content: center;
 }
 
+.brandLogo{
+    text-decoration: none;
+}
 
 .navlink {
     font-size: 1.1rem !important;

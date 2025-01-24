@@ -5,6 +5,8 @@ import { useTypewriter, Cursor } from "react-simple-typewriter"
 import { Button } from 'react-bootstrap'
 import AnimatedIcons from '../utilityComponents/animatedIcons/AnimatedIcons'
 
+import { NavLink } from 'react-router-dom'
+
 const Home = () => {
     const [text] = useTypewriter({
         words: ["HTML", "CSS", "Javascript", "React JS"],
@@ -51,12 +53,12 @@ const Home = () => {
                             <p className={`${styles.SkilledAtContainer}`}>Skilled at <span className={`${styles.typedText}`}>{text}<Cursor /></span></p>
                             <p>Welcome to my portfolio, a curated collection of my professional journey and creative endeavors.</p>
                             <div className="buttons d-flex align-items-center gap-2 justify-content-center justify-content-lg-start">
-                                <a href="#contactMe">
+                                <NavLink to="/contact">
                                     <Button className="secondaryBtn fadeUpAnimation" type="button" size="lg">Contact Me</Button>
-                                </a>
-                                <a href="https://drive.google.com/file/d/11kjO3LLICN_kWkQFj8fhr5-ApX04PDRO/view?usp=drivesdk" target='_black' download>
+                                </NavLink>
+                                <NavLink t0="https://drive.google.com/file/d/11kjO3LLICN_kWkQFj8fhr5-ApX04PDRO/view?usp=drivesdk" target='_black' download>
                                     <Button className="primaryBtn fadeUpAnimation" type="button" size="lg">Resume</Button>
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
 

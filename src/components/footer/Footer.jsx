@@ -1,8 +1,6 @@
 import React from 'react'
 import styles from "./Footer.module.css"
 import SocialMediaLinks from "../utilityComponents/socialMedia/SocialMediaLinks"
-// import Nav from 'react-bootstrap/Nav';
-
 import { NavLink } from 'react-router-dom';
 
 const Footer = () => {

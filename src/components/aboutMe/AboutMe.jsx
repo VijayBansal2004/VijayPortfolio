@@ -2,6 +2,7 @@ import React from 'react'
 import styles from "./AboutMe.module.css"
 import Heading from '../utilityComponents/sectionHeading/Heading'
 import { Button } from 'react-bootstrap'
+import { NavLink } from 'react-router-dom'
 
 const AboutMe = () => {
     return (
@@ -15,12 +16,12 @@ const AboutMe = () => {
                     <h1 className='text-start mb-2 scrollReveal w-100 text-center text-lg-start'>Vijay Bansal</h1>
                     <p className='text-start fadeUpAnimation text-center text-lg-start'>I am a highly motivated and results-oriented Front-End Developer with expertise in HTML, CSS, Bootstrap, and React.js. I excel in creating responsive, visually compelling websites that focus on delivering seamless user experiences and driving engagement. With a solid understanding of modern web development technologies, I am adept at transforming complex requirements into efficient, scalable solutions. My passion for innovation and continuous learning drives me to stay updated with the latest industry trends, ensuring the delivery of cutting-edge digital experiences that align with business objectives.</p>
                     <div className="buttons d-flex align-items-center gap-2 justify-content-center justify-content-lg-start">
-                        <a href="#contactMe">
+                        <NavLink to="/contact">
                             <Button className="secondaryBtn fadeUpAnimation" type="button" size="lg">Contact Me</Button>
-                        </a>
-                        <a href="https://drive.google.com/file/d/11kjO3LLICN_kWkQFj8fhr5-ApX04PDRO/view?usp=drivesdk" target='_black' download>
+                        </NavLink>
+                        <NavLink to="https://drive.google.com/file/d/11kjO3LLICN_kWkQFj8fhr5-ApX04PDRO/view?usp=drivesdk" target='_black' download>
                             <Button className="primaryBtn fadeUpAnimation" type="button" size="lg">Resume</Button>
-                        </a>
+                        </NavLink>
                     </div>
                 </div>
                 <div className={`${styles.AboutMeImageContainer} fadeUpAnimation col-12 col-lg-5`}>
