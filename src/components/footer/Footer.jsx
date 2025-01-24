@@ -1,23 +1,26 @@
 import React from 'react'
 import styles from "./Footer.module.css"
 import SocialMediaLinks from "../utilityComponents/socialMedia/SocialMediaLinks"
-import Nav from 'react-bootstrap/Nav';
+// import Nav from 'react-bootstrap/Nav';
+
+import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
     return (
         <footer className={styles.footer}>
             <div className="container row gap-4 gap-lg-0">
                 <div className="footerLogo col-12 col-lg-3 text-center text-lg-start">
-                    <Nav.Link href="#home"><h1>Vijay</h1></Nav.Link>
+                    <NavLink to="/" className={styles.logo}><h1>Vijay</h1></NavLink>
                 </div>
 
                 <div className="footerLinksContainer col-12 col-lg-6 align-content-center text-center text-lg-start">
                     <ul className={`${styles.footerLinks} m-0 justify-content-center flex-column flex-sm-row`}>
-                        <Nav.Link href="#home" className={`${styles.navlink}`}>Home</Nav.Link>
-                        <Nav.Link href="#aboutMe" className={`${styles.navlink}`}>About Me</Nav.Link>
-                        <Nav.Link href="#skills" className={`${styles.navlink}`}>Skills</Nav.Link>
-                        <Nav.Link href="#projects" className={`${styles.navlink}`}>Projects</Nav.Link>
-                        <Nav.Link href="#contactMe" className={`${styles.navlink}`}>Contact Me</Nav.Link>
+                        <NavLink to="/" className={`${styles.navlink}`}>Home</NavLink>
+                        <NavLink to="/about" className={`${styles.navlink}`}>About Me</NavLink>
+                        <NavLink to="/skills" className={`${styles.navlink}`}>Skills</NavLink>
+                        <NavLink to="/projects" className={`${styles.navlink}`}>Projects</NavLink>
+                        <NavLink to="/contact" className={`${styles.navlink}`}>Contact Me</NavLink>
+                        <NavLink to="/blogs" className={`${styles.navlink}`}>Blogs</NavLink>
                     </ul>
                 </div>
 

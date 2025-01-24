@@ -7,6 +7,11 @@
     padding-block: 20px;
 }
 
+.footer .logo{
+    text-decoration: none;
+    color: white;
+}
+
 .footer .footerLinks {
     display: flex;
     gap: 5%;
@@ -32,6 +37,7 @@
     font-size: 1.1rem !important;
     position: relative;
     transition: all .2s ease-in-out;
+    text-decoration: none;
 
     &:hover {
         color: #ffc49a !important;

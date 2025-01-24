@@ -9,22 +9,36 @@ import styles from "./Layout.module.css"
 import AboutMe from '../aboutMe/AboutMe'
 
 import Nav from 'react-bootstrap/Nav';
-// import Blogs from '../blogs/Blogs'
+import Blogs from '../blogs/Blogs'
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const Layout = () => {
     return (
         <>
-            <Header />
-            <Home />
-            <AboutMe />
-            <Skills />
-            <Projects />
-            <ContactMe />
-            {/* <Blogs /> */}
-            <Footer />
-            <div className={`${styles.gotoHome}`}>
-                <Nav.Link href="#home" className="btn primaryBtn">^</Nav.Link>
-            </div>
+            <Router>
+                <Header />
+                <Routes>
+                    <Route path="/" element={
+                        <>
+                            <Home />
+                            <AboutMe />
+                            <Skills />
+                            <Projects />
+                            <ContactMe />
+                        </>
+                    } />
+                    <Route path="/about" element={<AboutMe />} />
+                    <Route path="/skills" element={<Skills />} />
+                    <Route path="/projects" element={<Projects />} />
+                    <Route path="/contact" element={<ContactMe />} />
+                    <Route path="/blogs" element={<Blogs />} />
+                </Routes>
+                <Footer />
+                <div className={`${styles.gotoHome}`}>
+                    <Nav.Link href="#home" className="btn primaryBtn">^</Nav.Link>
+                </div>
+            </Router>
         </>
     )
 }

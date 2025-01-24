@@ -18,6 +18,7 @@
     padding: 17px !important;
     font-weight: 500 !important;
     position: relative;
+    text-decoration: none;
     transition: all .2s ease-in-out;
 
     &:hover {
@@ -37,6 +38,10 @@
     &:hover::after {
         animation: navlinkAnimation .2s ease-in forwards;
     }
+}
+
+.active{
+    color: #ffc49a !important;
 }
 
 @keyframes navlinkAnimation {

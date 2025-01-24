@@ -4,7 +4,10 @@ import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import styles from './Header.module.css';
-import { NavLink } from 'react-bootstrap';
+// import { NavLink } from 'react-bootstrap';
+
+import { NavLink } from "react-router-dom";
+
 const Header = () => {
     return (
         <Navbar collapseOnSelect expand="lg" className={styles.navbar}>
@@ -13,14 +16,15 @@ const Header = () => {
                 <Navbar.Toggle className={`${styles.hamburger}`} aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className={` ${styles.navlinkContainer}`}>
-                        <NavLink href="#home" className={`text-white ${styles.navlink}`}>Home</NavLink>
-                        <NavLink href="#aboutMe" className={`text-white ${styles.navlink}`}>About Me</NavLink>
-                        <NavLink href="#skills" className={`text-white ${styles.navlink}`}>Skills</NavLink>
-                        <NavLink href="#projects" className={`text-white ${styles.navlink}`}>Projects</NavLink>
-                        <NavLink href="#contactMe" className={`text-white ${styles.navlink}`}>Contact Me</NavLink>
+                        <NavLink className={({ isActive }) => (isActive ? `text-white ${styles.navlink} ${styles.active}` : `text-white ${styles.navlink}`)} to="/">Home</NavLink>
+                        <NavLink className={({ isActive }) => (isActive ? `text-white ${styles.navlink} ${styles.active}` : `text-white ${styles.navlink}`)} to="/about" >About Me</NavLink>
+                        <NavLink className={({ isActive }) => (isActive ? `text-white ${styles.navlink} ${styles.active}` : `text-white ${styles.navlink}`)} to="/skills" >Skills</NavLink>
+                        <NavLink className={({ isActive }) => (isActive ? `text-white ${styles.navlink} ${styles.active}` : `text-white ${styles.navlink}`)} to="/projects">Projects</NavLink>
+                        <NavLink className={({ isActive }) => (isActive ? `text-white ${styles.navlink} ${styles.active}` : `text-white ${styles.navlink}`)} to="/contact">Contact Me</NavLink>
+                        <NavLink className={({ isActive }) => (isActive ? `text-white ${styles.navlink} ${styles.active}` : `text-white ${styles.navlink}`)} to="/blogs">Blogs</NavLink>
                     </Nav>
                     <Form className="d-flex">
-                        <NavLink href="#contactMe" className={`text-white`}><Button className="primaryBtn">Let's Connect</Button></NavLink>
+                        <NavLink to="/contact" className={`text-white`}><Button className="primaryBtn">Let's Connect</Button></NavLink>
                     </Form>
                 </Navbar.Collapse>
             </Container>
