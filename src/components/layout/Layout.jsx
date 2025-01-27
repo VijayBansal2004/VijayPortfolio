@@ -12,6 +12,7 @@ import Nav from 'react-bootstrap/Nav';
 import Blogs from '../blogs/Blogs'
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Login from '../login/Login'
 
 const Layout = () => {
     return (
@@ -39,6 +40,8 @@ const Layout = () => {
                     <Nav.Link href="#home" className="btn primaryBtn">^</Nav.Link>
                 </div>
             </Router>
+
+            {/* <Login /> */}
         </>
     )
 }
