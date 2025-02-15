@@ -65,10 +65,14 @@ const Home = () => {
                         <div className={`${styles.heroSectionImgContainer} col-12 col-lg-5`}>
                             {/* <div className={`${styles.heroImgbackground}`}> */}
 
-                            <div className={`${styles.heroImg}`}></div>
+                            {/* <div className={`${styles.heroImg}`}></div> */}
 
                             {/* <img className={`${styles.heroImg}`} src="../../../public/images/employee.webp" alt="hero img" /> */}
                             {/* </div> */}
+
+                            <div className={styles.homeimg_cont}>
+                                <img src="../../../public/images/vijay_home.webp" alt="home image" />
+                            </div>
                         </div>
                     </div>
                 </div>

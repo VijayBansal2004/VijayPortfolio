@@ -12,33 +12,56 @@
     background-color: #00000014;
 }
 
-.heroImg {
-    width: 500px;
-    height: 500px;
-    margin: auto;
+.heroSectionImgContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.homeimg_cont{
+    max-width: 500px;
+    max-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
     position: relative;
-    /* background: url(/public/images/vijay-resume-img3.png) center center; */
-    background-size: contain;
-    background-repeat: no-repeat;
-    /* border-radius: 0px 0px 400px 400px; */
 
-    &::before {
+    &::after {
         content: "";
         position: absolute;
-        background-color: #f26602;
-        border-radius: 815px;
-        bottom: 7px;
-        left: 42px;
-        width: 85%;
-        height: 85%;
+        background: linear-gradient(90deg, var(--oringe-color), transparent);
+        background-position: center;
+        inset: -10px;
+        animation: rotate 8s linear infinite;
+        border-radius: 50%;
         z-index: -1;
+    }
+}
+
+@keyframes rotate {
+    to{
+        transform: rotate(0deg);
+    }
+    
+    from{
+        transform: rotate(360deg);
+    }
+}
+
+.homeimg_cont img{
+    width: 100%;
+    border-radius: 50%;
+    filter: grayscale(1);
+    transition: all .5s ease;
+
+    &:hover {
+        filter: grayscale(0);
     }
 }
 
 .heroSectionDetailsContainer {
     color: white;
 }
-
 
 /* Scroll ZoomIn animation */
 
@@ -101,15 +124,13 @@
     }
 }
 
-@media(max-width:590px) {
-    .heroImg {
-        width: 280px;
-
-        &::before {
-            bottom: 101px;
-            left: 15px;
-            width: 250px;
-            height: 250px;
+@media(max-width:700px) {
+    .homeimg_cont{
+        padding: 10px;
+        background: linear-gradient(90deg, var(--oringe-color), transparent);
+    
+        &::after {
+            display: none;
         }
     }
 }
