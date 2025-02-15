@@ -61,15 +61,15 @@ const Skills = () => {
         },
         {
             skillName: "CSS",
-            skillPercentage: "86%",
+            skillPercentage: "88%",
         },
         {
             skillName: "JS",
-            skillPercentage: "75%",
+            skillPercentage: "85%",
         },
         {
             skillName: "React JS",
-            skillPercentage: "70%",
+            skillPercentage: "80%",
         },
         {
             skillName: "Wordpress",
@@ -80,8 +80,8 @@ const Skills = () => {
             skillPercentage: "75%",
         },
         {
-            skillName: "Photoshop",
-            skillPercentage: "50%",
+            skillName: "Git/Github",
+            skillPercentage: "70%",
         },
     ]
 

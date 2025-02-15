@@ -112,7 +112,7 @@ body {
   animation: fadeUp linear forwards;
   animation-timeline: view();
   animation-range-start: 0vh;
-  animation-range-end: 30vh;
+  animation-range-end: 20vh;
   scale: 0.7;
   opacity: 0;
 }
