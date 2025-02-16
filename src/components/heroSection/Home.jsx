@@ -17,15 +17,15 @@ const Home = () => {
 
     const animatedIcons = [
         {
-            imgURL: "../../../public/images/plus.svg",
+            imgURL: "/public/images/plus.svg",
             imgName: "plus",
         },
         {
-            imgURL: "../../../public/images/strockedSqr.webp",
+            imgURL: "/public/images/strockedSqr.webp",
             imgName: "strockedSqr",
         },
         {
-            imgURL: "../../../public/images/overlapedSqrs.webp",
+            imgURL: "/public/images/overlapedSqrs.webp",
             imgName: "overlapedSqrs",
         },
     ]
@@ -60,7 +60,7 @@ const Home = () => {
 
                         <div className={`${styles.heroSectionImgContainer} col-12 col-lg-5`}>
                             <div className={styles.homeimg_cont}>
-                                <img src="../../../public/images/vijay_home.webp" alt="home image" />
+                                <img src="/public/images/vijay_home.webp" alt="home image" />
                             </div>
                         </div>
                     </div>

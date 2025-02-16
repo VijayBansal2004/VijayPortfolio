@@ -8,49 +8,49 @@ const Skills = () => {
 
     const skills = [
         {
-            imgPath: "../../../public/images/htmlLogo.svg",
+            imgPath: "/public/images/htmlLogo.svg",
         },
         {
-            imgPath: "../../../public/images/cssLogo.svg",
+            imgPath: "/public/images/cssLogo.svg",
         },
         {
-            imgPath: "../../../public/images/javascriptLogo.svg",
+            imgPath: "/public/images/javascriptLogo.svg",
         },
         {
-            imgPath: "../../../public/images/reactJSLogo.svg",
+            imgPath: "/public/images/reactJSLogo.svg",
         },
         {
-            imgPath: "../../../public/images/wordpressLogo.svg",
+            imgPath: "/public/images/wordpressLogo.svg",
         },
         {
-            imgPath: "../../../public/images/htmlLogo.svg",
+            imgPath: "/public/images/htmlLogo.svg",
         },
         {
-            imgPath: "../../../public/images/cssLogo.svg",
+            imgPath: "/public/images/cssLogo.svg",
         },
         {
-            imgPath: "../../../public/images/gitLogo.svg",
+            imgPath: "/public/images/gitLogo.svg",
         },
         {
-            imgPath: "../../../public/images/githubLogo.svg",
+            imgPath: "/public/images/githubLogo.svg",
         },
         {
-            imgPath: "../../../public/images/illustratorLogo.svg",
+            imgPath: "/public/images/illustratorLogo.svg",
         },
         {
-            imgPath: "../../../public/images/photoshopLogo.svg",
+            imgPath: "/public/images/photoshopLogo.svg",
         },
         {
-            imgPath: "../../../public/images/javascriptLogo.svg",
+            imgPath: "/public/images/javascriptLogo.svg",
         },
         {
-            imgPath: "../../../public/images/reactJSLogo.svg",
+            imgPath: "/public/images/reactJSLogo.svg",
         },
         {
-            imgPath: "../../../public/images/illustratorLogo.svg",
+            imgPath: "/public/images/illustratorLogo.svg",
         },
         {
-            imgPath: "../../../public/images/photoshopLogo.svg",
+            imgPath: "/public/images/photoshopLogo.svg",
         },
     ]
 
