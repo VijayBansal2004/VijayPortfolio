@@ -8,49 +8,49 @@ const Skills = () => {
 
     const skills = [
         {
-            imgPath: "/public/images/htmlLogo.svg",
+            imgPath: "/images/htmlLogo.svg",
         },
         {
-            imgPath: "/public/images/cssLogo.svg",
+            imgPath: "/images/cssLogo.svg",
         },
         {
-            imgPath: "/public/images/javascriptLogo.svg",
+            imgPath: "/images/javascriptLogo.svg",
         },
         {
-            imgPath: "/public/images/reactJSLogo.svg",
+            imgPath: "/images/reactJSLogo.svg",
         },
         {
-            imgPath: "/public/images/wordpressLogo.svg",
+            imgPath: "/images/wordpressLogo.svg",
         },
         {
-            imgPath: "/public/images/htmlLogo.svg",
+            imgPath: "/images/htmlLogo.svg",
         },
         {
-            imgPath: "/public/images/cssLogo.svg",
+            imgPath: "/images/cssLogo.svg",
         },
         {
-            imgPath: "/public/images/gitLogo.svg",
+            imgPath: "/images/gitLogo.svg",
         },
         {
-            imgPath: "/public/images/githubLogo.svg",
+            imgPath: "/images/githubLogo.svg",
         },
         {
-            imgPath: "/public/images/illustratorLogo.svg",
+            imgPath: "/images/illustratorLogo.svg",
         },
         {
-            imgPath: "/public/images/photoshopLogo.svg",
+            imgPath: "/images/photoshopLogo.svg",
         },
         {
-            imgPath: "/public/images/javascriptLogo.svg",
+            imgPath: "/images/javascriptLogo.svg",
         },
         {
-            imgPath: "/public/images/reactJSLogo.svg",
+            imgPath: "/images/reactJSLogo.svg",
         },
         {
-            imgPath: "/public/images/illustratorLogo.svg",
+            imgPath: "/images/illustratorLogo.svg",
         },
         {
-            imgPath: "/public/images/photoshopLogo.svg",
+            imgPath: "/images/photoshopLogo.svg",
         },
     ]
 

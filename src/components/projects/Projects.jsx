@@ -11,13 +11,13 @@ const Projects = () => {
 
     const remittanceContent = [
         {
-            imagePath: '/public/images/kantipur.webp',
+            imagePath: '/images/kantipur.webp',
             websiteURL: "https://vijaybansal2004.github.io/Kantipur-Rimit",
             title: 'Kantipur Remit',
             discription: 'Send money to Nepal with Kantipur Remit !',
         },
         {
-            imagePath: '/public/images/clearPath.webp',
+            imagePath: '/images/clearPath.webp',
             websiteURL: "https://vijaybansal2004.github.io/clearpath",
             title: 'ClearPath Remit',
             discription: 'Save up to 3x on international transfers across more than 50 currencies, with no hidden fees.',
@@ -26,13 +26,13 @@ const Projects = () => {
 
     const blockchainContent = [
         {
-            imagePath: '/public/images/tronWolf.webp',
+            imagePath: '/images/tronWolf.webp',
             websiteURL: "https://vijaybansal2004.github.io/TronWolf",
             title: 'TronWolf',
             discription: 'DISCOVER YOUR INNER BEAST AND MAKE YOUR WOLFPACK HOWL!',
         },
         {
-            imagePath: '/public/images/axiBloc.webp',
+            imagePath: '/images/axiBloc.webp',
             websiteURL: "https://axibloc.netlify.app",
             title: 'Axibloc',
             discription: 'Achieving enduring performance for mission-critical priorities',
@@ -41,13 +41,13 @@ const Projects = () => {
 
     const tradingContent = [
         {
-            imagePath: '/public/images/equiX.webp',
+            imagePath: '/images/equiX.webp',
             websiteURL: "https://vijaybansal2004.github.io/EquiX",
             title: 'EquiX',
             discription: `Trade with the world's largest retail broker and enjoy superior market conditions.`,
         },
         {
-            imagePath: '/public/images/crypto.webp',
+            imagePath: '/images/crypto.webp',
             websiteURL: "https://vijaybansal2004.github.io/crypto/",
             title: 'Crypto',
             discription: `Partner with the world’s largest retail broker and take advantage of exceptional market conditions.`,
@@ -56,13 +56,13 @@ const Projects = () => {
 
     const fantasyContent = [
         {
-            imagePath: '/public/images/super11.webp',
+            imagePath: '/images/super11.webp',
             websiteURL: "https://vijaybansal2004.github.io/Super11",
             title: 'Super11',
             discription: 'GETTING STARTED WITH SUPER11 IS A BREEZE!',
         },
         {
-            imagePath: '/public/images/super11.webp',
+            imagePath: '/images/super11.webp',
             websiteURL: "https://vijaybansal2004.github.io/Super11-scrolling",
             title: 'Super11-scrolling',
             discription: 'GETTING STARTED WITH SUPER11 IS A BREEZE!',
@@ -72,31 +72,31 @@ const Projects = () => {
 
     const funProjectsContent = [
         {
-            imagePath: '/public/images/reactForm.webp',
+            imagePath: '/images/reactForm.webp',
             websiteURL: "https://github.com/VijayBansal2004/useForm---React",
             title: 'User From',
             discription: 'This form validates user input data',
         },
         {
-            imagePath: '/public/images/guessTheNumber.webp',
+            imagePath: '/images/guessTheNumber.webp',
             websiteURL: "https://github.com/VijayBansal2004/guess-the-number",
             title: 'Guess the Number',
             discription: 'In this game the user has to guess the computer generated random number',
         },
         {
-            imagePath: '/public/images/wordFormatter.webp',
+            imagePath: '/images/wordFormatter.webp',
             websiteURL: "https://github.com/VijayBansal2004/wordFormatter",
             title: 'Word Formatter',
             discription: 'This app transforms user entered text!',
         },
         {
-            imagePath: '/public/images/todoApp.webp',
+            imagePath: '/images/todoApp.webp',
             websiteURL: "https://github.com/VijayBansal2004/todo-app",
             title: 'Todo App',
             discription: 'Save your todos here!',
         },
         {
-            imagePath: '/public/images/passwordManager.webp',
+            imagePath: '/images/passwordManager.webp',
             websiteURL: "https://github.com/VijayBansal2004/password-manager-app",
             title: 'Password Manager App',
             discription: 'Save your Id, Password here!',

@@ -10,15 +10,15 @@ const Login = () => {
 
     const animatedIcons = [
         {
-            imgURL: "/public/images/plus.svg",
+            imgURL: "/images/plus.svg",
             imgName: "plus",
         },
         {
-            imgURL: "/public/images/strockedSqr.webp",
+            imgURL: "/images/strockedSqr.webp",
             imgName: "strockedSqr",
         },
         {
-            imgURL: "/public/images/overlapedSqrs.webp",
+            imgURL: "/images/overlapedSqrs.webp",
             imgName: "overlapedSqrs",
         },
     ]
