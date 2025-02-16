@@ -68,14 +68,6 @@
 .scrollZoomInAnimation {
     animation: scrollZoomInAnimation linear forwards;
     animation-timeline: view();
-    /* animation-range-start: 60vh;
-    animation-range-end: 100vh; */
-}
-
-@keyframes scrollZoomInAnimation {
-    100% {
-        /* background-size: 150%; */
-    }
 }
 
 .hello {
@@ -85,7 +77,6 @@
 
 .myName {
     font-size: 4.5rem;
-    /* color: #f26602; */
     font-weight: 900;
     letter-spacing: 2px;
 }

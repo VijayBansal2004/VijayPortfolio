@@ -1,9 +1,5 @@
 /* Home page icons animation */
 
-/* animation: rotate 5s linear infinite; */
-/* animation: upDown 5s linear infinite alternate; */
-/* animation: leftRight 5s linear infinite alternate; */
-
 .animatedIcon {
     position: absolute;
     opacity: .4;
@@ -32,7 +28,6 @@
     width: 150px;
     bottom: 0;
     right: 0;
-    /* animation: rotate 8s linear infinite; */
     animation: scaleUpDown 8s alternate infinite;
 }
 
@@ -68,6 +63,5 @@
 
     100% {
         transform: translateX(-30px);
-
     }
 }

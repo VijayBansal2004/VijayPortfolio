@@ -28,16 +28,12 @@ const Home = () => {
             imgURL: "../../../public/images/overlapedSqrs.webp",
             imgName: "overlapedSqrs",
         },
-        // {
-        //     imgURL: "../../../public/images/linedCircle.webp",
-        //     imgName: "linedCircle",
-        // },
     ]
 
     return (
         <>
-            <section id='home' className={`${styles.heroSection} ${styles.scrollZoomInAnimation}`}>
-                <div className={`${styles.overlay} align-content-center`}>
+            <section id='home' className={`${styles.heroSection} ${styles.scrollZoomInAnimation} pt-5`}>
+                <div className={`${styles.overlay} d-flex justify-content-center align-items-center`}>
 
                     {
                         animatedIcons.map((img) => (
@@ -45,7 +41,7 @@ const Home = () => {
                         ))
                     }
 
-                    <div className="container row justify-content-center align-items-center gap-3 mt-5 flex-wrap-reverse">
+                    <div className="container row justify-content-center align-items-center gap-3 flex-wrap-reverse">
                         <div className={`${styles.heroSectionDetailsContainer} col-12 col-lg-5 text-center text-lg-start`}>
                             <p className={`${styles.hello}`}>Hello, I am</p>
                             <h1 className={`${styles.myName}`}>Vijay Bansal</h1>
@@ -63,13 +59,6 @@ const Home = () => {
                         </div>
 
                         <div className={`${styles.heroSectionImgContainer} col-12 col-lg-5`}>
-                            {/* <div className={`${styles.heroImgbackground}`}> */}
-
-                            {/* <div className={`${styles.heroImg}`}></div> */}
-
-                            {/* <img className={`${styles.heroImg}`} src="../../../public/images/employee.webp" alt="hero img" /> */}
-                            {/* </div> */}
-
                             <div className={styles.homeimg_cont}>
                                 <img src="../../../public/images/vijay_home.webp" alt="home image" />
                             </div>

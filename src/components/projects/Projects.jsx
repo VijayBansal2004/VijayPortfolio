@@ -106,7 +106,7 @@ const Projects = () => {
     const allProjects = [...remittanceContent, ...blockchainContent, ...tradingContent, ...fantasyContent, ...funProjectsContent];
 
     return (
-        <section id='projects' className={`${styles.projectSectionContainer}`}>
+        <section id='projects' className={`${styles.projectSectionContainer} containerBlockPadding`}>
             <div className="container">
                 <Heading heading="Projects" />
                 <h1 className='text-center scrollReveal w-100 mb-5'>What Can I Do ?</h1>

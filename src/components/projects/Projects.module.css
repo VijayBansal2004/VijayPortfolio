@@ -7,7 +7,6 @@
 .projectSectionContainer {
     color: white;
     min-height: 100vh;
-    padding-block: 100px;
 }
 
 .projectContainer {
@@ -32,4 +31,10 @@
 
 .primaryColor[aria-selected="true"]{
     background-color: #f26602 !important;
+}
+
+@media(max-width:500px) {
+    .projectNavContainer a {
+        text-align: center;
+    }
 }

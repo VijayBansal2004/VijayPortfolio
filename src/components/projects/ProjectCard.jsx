@@ -12,7 +12,6 @@ const ProjectCard = ({ content }) => {
 
                     <div className={`${styles.projectDetailsContainer}`}>
                         <h4 className={`${styles.scrollReveal} ${styles.projectCardHeading}`}>{content.title}</h4>
-                        <br />
                         <p className={`${styles.scrollReveal} ${styles.projectCardDetails}`}>{content.discription}</p>
                     </div>
                 </a>

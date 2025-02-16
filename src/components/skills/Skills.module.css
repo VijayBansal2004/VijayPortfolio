@@ -79,10 +79,6 @@
 
 .skillPercentageContainer {
     transition: all .2s ease-out;
-
-    /* &:hover {
-        scale: 1.05;
-    } */
 }
 
 .skillName,

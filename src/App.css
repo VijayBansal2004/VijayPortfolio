@@ -143,34 +143,40 @@ body {
 @keyframes rotateAnimation {
   100% {
     transform: rotate(360deg);
-    /* transform-origin: center; */
   }
 }
-
-@keyframes translateUpAnimation {
-  100% {
-    /* transform: translateY(-500px); */
-  }
-}
-
-/* background: radial-gradient(circle at 10% 20%, rgb(255, 197, 61) 0%, rgb(255, 94, 7) 90%); */
 
 .scrollReveal {
   display: inline-block;
+  background: -o-radial-gradient(
+    10% 20%,
+    circle,
+    rgb(255, 255, 255),
+    rgb(255, 255, 255)
+  );
   background: radial-gradient(
     circle at 10% 20%,
     rgb(255, 255, 255),
     rgb(255, 255, 255)
   );
+  -webkit-background-clip: text;
   background-clip: text;
   background-size: 0%;
   background-repeat: no-repeat;
   color: #ffffff3b;
 
+  -webkit-animation: scrollReveal linear forwards;
+
   animation: scrollReveal linear forwards;
   animation-timeline: view();
   animation-range-start: contain 0vh;
   animation-range-end: contain 40vh;
+}
+
+@-webkit-keyframes scrollReveal {
+  100% {
+    background-size: 100%;
+  }
 }
 
 @keyframes scrollReveal {
@@ -183,5 +189,9 @@ body {
   .primaryBtn,
   .secondaryBtn {
     width: 8rem;
+  }
+
+  .containerBlockPadding {
+    padding-block: 50px;
   }
 }

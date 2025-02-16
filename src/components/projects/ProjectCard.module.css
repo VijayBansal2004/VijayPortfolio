@@ -6,12 +6,7 @@
     position: relative;
     border-radius: 10px 10px 10px 10px;
     overflow: hidden;
-    /* box-shadow: 0px 0px 40px -30px #f26602; */
     transition: all .3s ease-in-out;
-
-    /* &:hover {
-        scale: 1.04;
-    } */
 }
 
 .projectCard:hover  .projectDetailsContainer{
@@ -33,7 +28,10 @@
     position: absolute;
     inset: 0;
     background-color: #000000ba;
-    align-content: end;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
     padding: 10px 30px;
     text-align: center;
     transition: all .2s ease-in-out;
@@ -48,10 +46,7 @@
     }
 
     .scrollReveal {
-        /* background: radial-gradient(circle at 10% 20%, rgb(255, 197, 61) 0%, rgb(255, 94, 7) 90%); */
-
         display: inline;
-        /* background: radial-gradient(circle at 10% 20%, rgb(255, 255, 255), rgb(255, 255, 255)); */
         background-clip: text;
         background-size: 100% 100%;
         background-repeat: no-repeat;
