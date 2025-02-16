@@ -1,14 +1,44 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-    <script type="module" crossorigin src="/assets/index-CnsaPF-a.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-Bzs0HDRC.css">
+    <link
+      rel="shortcut icon"
+      href="/assets/favicon-CQLBisaz.webp"
+      type="image/x-icon" />
+    <title>Vijay Portfolio</title>
+    <style>
+      .wgl-canvas-outer {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.6;
+      }
+
+      .wgl-canvas-outer canvas {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/index-B-djNbSc.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DTiCMFwo.css">
   </head>
   <body>
     <div id="root"></div>
+    <div class="wgl-canvas-outer">
+      <canvas id="wgl-webgl-fluid" width="2880" height="1268"></canvas>
+    </div>
+    <script src="./webgl_fluid_settings.js" defer></script>
+    <script src="./jQuery_v3_6_0_cdn.js" defer></script>
+    <script src="./cursor_animation.js" defer></script>
   </body>
 </html>

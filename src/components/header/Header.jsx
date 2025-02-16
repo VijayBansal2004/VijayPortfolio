@@ -19,7 +19,7 @@ const Header = () => {
                         <NavLink className={({ isActive }) => (isActive ? `text-white ${styles.navlink} ${styles.active}` : `text-white ${styles.navlink}`)} to="/skills" >Skills</NavLink>
                         <NavLink className={({ isActive }) => (isActive ? `text-white ${styles.navlink} ${styles.active}` : `text-white ${styles.navlink}`)} to="/projects">Projects</NavLink>
                         <NavLink className={({ isActive }) => (isActive ? `text-white ${styles.navlink} ${styles.active}` : `text-white ${styles.navlink}`)} to="/contact">Contact Me</NavLink>
-                        <NavLink className={({ isActive }) => (isActive ? `text-white ${styles.navlink} ${styles.active}` : `text-white ${styles.navlink}`)} to="/blogs">Blogs</NavLink>
+                        {/* <NavLink className={({ isActive }) => (isActive ? `text-white ${styles.navlink} ${styles.active}` : `text-white ${styles.navlink}`)} to="/blogs">Blogs</NavLink> */}
                     </Nav>
                     <Form className="d-flex">
                         <NavLink to="/contact" className={`text-white`}><Button className="primaryBtn">Let's Connect</Button></NavLink>

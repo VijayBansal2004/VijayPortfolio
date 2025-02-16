@@ -18,7 +18,7 @@ const Footer = () => {
                         <NavLink to="/skills" className={`${styles.navlink}`}>Skills</NavLink>
                         <NavLink to="/projects" className={`${styles.navlink}`}>Projects</NavLink>
                         <NavLink to="/contact" className={`${styles.navlink}`}>Contact Me</NavLink>
-                        <NavLink to="/blogs" className={`${styles.navlink}`}>Blogs</NavLink>
+                        {/* <NavLink to="/blogs" className={`${styles.navlink}`}>Blogs</NavLink> */}
                     </ul>
                 </div>
 
