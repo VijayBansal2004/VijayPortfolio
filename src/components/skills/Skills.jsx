@@ -38,9 +38,6 @@ const Skills = () => {
             imgPath: "/images/illustratorLogo.svg",
         },
         {
-            imgPath: "/images/photoshopLogo.svg",
-        },
-        {
             imgPath: "/images/javascriptLogo.svg",
         },
         {
@@ -57,11 +54,11 @@ const Skills = () => {
     const skillPercentage = [
         {
             skillName: "HTML",
-            skillPercentage: "90%",
+            skillPercentage: "95%",
         },
         {
             skillName: "CSS",
-            skillPercentage: "88%",
+            skillPercentage: "91%",
         },
         {
             skillName: "JS",
@@ -72,16 +69,16 @@ const Skills = () => {
             skillPercentage: "80%",
         },
         {
-            skillName: "Wordpress",
-            skillPercentage: "60%",
-        },
-        {
             skillName: "Illustrator",
             skillPercentage: "75%",
         },
         {
             skillName: "Git/Github",
-            skillPercentage: "70%",
+            skillPercentage: "84%",
+        },
+        {
+            skillName: "Wordpress",
+            skillPercentage: "60%",
         },
     ]
 
@@ -91,7 +88,7 @@ const Skills = () => {
                 <Heading heading="Skills" />
                 <h1 className='text-center mb-5 scrollReveal w-100'>Why Choose Me ?</h1>
                 <p className={`${styles.scrollReveal}`}>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus sed eveniet aut soluta fugiat similique rem, quod voluptatum? Accusantium aut repellat sit error reprehenderit dignissimos quidem illum, molestias blanditiis? Eveniet.
+                    I have a strong front-end development skill set, specializing in building user-centric applications in domains like remittance, blockchain, cryptocurrency, and fantasy gaming. With a core understanding of HTML, CSS, JavaScript, React.js, and WordPress, I craft responsive, accessible, and performance-optimized interfaces. My expertise extends to Git & GitHub for efficient version control and collaboration.
                 </p>
 
                 <div className={styles.skillContainer}>

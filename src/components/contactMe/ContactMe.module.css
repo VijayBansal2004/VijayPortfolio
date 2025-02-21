@@ -56,3 +56,8 @@
         top: 10vh;
     }
 }
+@media(max-width:550px) {
+    .contactFeildContainer {
+        gap: 5px;
+    }
+}

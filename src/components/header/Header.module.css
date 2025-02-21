@@ -109,3 +109,8 @@
         width: 100%;
     }
 }
+@media (max-width: 550px) {
+    .navlink{
+        padding: 7px 0px !important;
+    }
+}
