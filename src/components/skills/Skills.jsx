@@ -81,7 +81,7 @@ const Skills = () => {
 
     return (
         <section id='skills' className={`${styles.skillsSection} align-content-center`}>
-            <div className={`${styles.skillsContainer} containerBlockPadding text-center container`}>
+            <div className={`${styles.skillsContainer} containerBlockPadding text-center container position-relative`}>
                 <Heading heading="Skills" />
                 <h1 className='text-center mb-5 scrollReveal w-100'>Why Choose Me ?</h1>
                 <p className={`${styles.scrollReveal}`}>

@@ -33,15 +33,14 @@ const Layout = () => {
                     <Route path="/skills" element={<Skills />} />
                     <Route path="/projects" element={<Projects />} />
                     <Route path="/contact" element={<ContactMe />} />
-                    {/* <Route path="/blogs" element={<Blogs />} /> */}
+                    <Route path="/blogs" element={<Blogs />} />
+                    <Route path="/login" element={<Login />} />
                 </Routes>
                 <Footer />
                 <div className={`${styles.gotoHome}`}>
                     <Nav.Link href="#home" className="btn primaryBtn">^</Nav.Link>
                 </div>
             </Router>
-
-            {/* <Login /> */}
         </>
     )
 }

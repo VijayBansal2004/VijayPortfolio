@@ -104,6 +104,10 @@
     .skillContainer {
         gap: 30px;
     }
+
+    .skillsPercentage {
+        padding-top: 50px !important;
+    }
 }
 
 @media(max-width:470px) {

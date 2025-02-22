@@ -103,7 +103,7 @@ const Blogs = () => {
         <div id='blogs' className={"containerBlockPadding container align-content-center"}>
             <div className='mb-5'>
                 <Heading heading="Blogs" />
-                <h1 className='text-center mb-5 scrollReveal w-100'>My Blogs</h1>
+                <h1 className='text-center scrollReveal w-100'>My Blogs</h1>
 
             </div>
 
