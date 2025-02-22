@@ -46,9 +46,6 @@ const Skills = () => {
         {
             imgPath: "/images/illustratorLogo.svg",
         },
-        {
-            imgPath: "/images/photoshopLogo.svg",
-        },
     ]
 
     const skillPercentage = [
@@ -99,7 +96,7 @@ const Skills = () => {
 
                 <div className={`${styles.skillsPercentage} row`}>
                     <div className="col-12 col-lg-6">
-                        <h2 class={`${styles.skillsPercentageHeading}`}>Technologies</h2>
+                        <h2 className={`${styles.skillsPercentageHeading}`}>Technologies</h2>
                     </div>
 
                     <div className={` col-12 col-lg-6`}>

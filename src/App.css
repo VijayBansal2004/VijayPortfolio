@@ -188,7 +188,8 @@ body {
 @media (max-width: 500px) {
   .primaryBtn,
   .secondaryBtn {
-    width: 8rem;
+    width: fit-content;
+    font-size: 18px !important;
   }
 
   .containerBlockPadding {
