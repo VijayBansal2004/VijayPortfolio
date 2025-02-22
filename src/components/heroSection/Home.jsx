@@ -9,7 +9,7 @@ import { NavLink } from 'react-router-dom'
 
 const Home = () => {
     const [text] = useTypewriter({
-        words: ["HTML", "CSS", "Javascript", "React JS"],
+        words: ["HTML", "CSS", "Javascript", "React JS", "Git/Github", "Bootstrap", "Tailwind CSS"],
         loop: {},
         typeSpeed: 100,
         deleteSpeed: 100,
