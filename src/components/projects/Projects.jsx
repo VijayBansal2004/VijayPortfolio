@@ -83,10 +83,10 @@ const Projects = () => {
             discription: `Trade cryptocurrencies across different exchanges through XchangOn’s Arbitrage Trading feature and enjoy the benefits of price differentials between different exchanges.`,
         },
         {
-            imagePath: '/images/equiX.webp',
-            websiteURL: "https://vijaybansal2004.github.io/EquiX",
-            title: 'EquiX',
-            discription: `Trade with the world's largest retail broker and enjoy superior market conditions.`,
+            imagePath: '/images/upshot-Bot.webp',
+            websiteURL: "https://vijaybansal2004.github.io/UpshotBot",
+            title: 'UpshotBot',
+            discription: `Let our advanced bot handle the heavy lifting by finding and acting on price gaps across crypto exchanges.`,
         },
 
         {
