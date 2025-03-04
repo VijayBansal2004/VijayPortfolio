@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './Projects.module.css'
 import ProjectCard from "./ProjectCard"
+// import FeaturedProjectCard from "./FeaturedProjectCard"
 import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
 import Row from 'react-bootstrap/Row';
@@ -112,129 +113,274 @@ const Projects = () => {
         },
     ];
 
-    // const funProjectsContent = [
+    const allProjects = [...remittanceContent, ...blockchainContent, ...tradingContent, ...fantasyContent];
+
+    // const featuredProjects = [
     //     {
-    //         imagePath: '/images/reactForm.webp',
-    //         websiteURL: "https://github.com/VijayBansal2004/useForm---React",
-    //         title: 'User From',
-    //         discription: 'This form validates user input data',
+    //         url: "https://vijaybansal2004.github.io/Everest-Remit/",
+    //         imageUrl: "/images/everestRemit_favicon.svg",
+    //         name: "Everest Remit",
+    //         details: "Facilitating Swift Money Transfers To Nepal",
+    //         technology: "HTML, CSS, JavaScript, Figma",
+    //         placement: "left",
     //     },
     //     {
-    //         imagePath: '/images/guessTheNumber.webp',
-    //         websiteURL: "https://github.com/VijayBansal2004/guess-the-number",
-    //         title: 'Guess the Number',
-    //         discription: 'In this game the user has to guess the computer generated random number',
+    //         url: "https://vijaybansal2004.github.io/AIO-Exchange/",
+    //         imageUrl: "/images/aioExchange_favicon.svg",
+    //         name: "AIO Exchange",
+    //         details: "Simplify Your Crypto Trading Experience",
+    //         technology: "HTML, CSS, JavaScript, Figma",
+    //         placement: "right",
     //     },
     //     {
-    //         imagePath: '/images/wordFormatter.webp',
-    //         websiteURL: "https://github.com/VijayBansal2004/wordFormatter",
-    //         title: 'Word Formatter',
-    //         discription: 'This app transforms user entered text!',
+    //         url: "https://answerautismtherapy.com/",
+    //         imageUrl: "/images/answerAutism_favicon.svg",
+    //         name: "Answer For Autism",
+    //         details: "Effective Online Autism Intervention Programs for Your Child&apos;s Growth",
+    //         technology: "Wordpress, Elementer, JavaScript, Figma",
+    //         placement: "right",
     //     },
     //     {
-    //         imagePath: '/images/todoApp.webp',
-    //         websiteURL: "https://github.com/VijayBansal2004/todo-app",
-    //         title: 'Todo App',
-    //         discription: 'Save your todos here!',
+    //         url: "https://actautismtherapy.com/",
+    //         imageUrl: "/images/actAutism_favicon.svg",
+    //         name: "Act For Autism",
+    //         details: "Unlock Your Child&apos;s Potential with Our Developmental Therapeutic Program",
+    //         technology: "Wordpress, Elementer, Figma, JavaScript",
+    //         placement: "right",
     //     },
     //     {
-    //         imagePath: '/images/passwordManager.webp',
-    //         websiteURL: "https://github.com/VijayBansal2004/password-manager-app",
-    //         title: 'Password Manager App',
-    //         discription: 'Save your Id, Password here!',
+    //         url: "https://vijaybansal2004.github.io/juststake-dashboard",
+    //         imageUrl: "/images/juststake_favicon.svg",
+    //         name: "JustStake Dashboard",
+    //         details: "Admin Panel",
+    //         technology: "HTML, CSS, Figma, JavaScript",
+    //         placement: "left",
+    //     },
+    //     {
+    //         url: "https://webcomsystems.net/",
+    //         imageUrl: "/images/webcom_favicon.svg",
+    //         name: "Webcom Systems",
+    //         details: "Blockchain Development Company",
+    //         technology: "Wordpress, wpbakery, HTML, CSS",
+    //         placement: "left",
     //     },
     // ];
 
-    const allProjects = [...remittanceContent, ...blockchainContent, ...tradingContent, ...fantasyContent];
-
     return (
-        <section id='projects' className={`${styles.projectSectionContainer} containerBlockPadding`}>
-            <div className="container">
-                <Heading heading="Projects" />
-                <h1 className='text-center scrollReveal w-100 mb-5'>What Can I Do ?</h1>
-                <Tab.Container id="left-tabs-example" defaultActiveKey="allProjects" className={`${styles.projectContainer}`}>
-                    <Row className='gap-5 gap-sm-0'>
-                        <Col sm={3} lg={2}>
-                            <Nav variant="pills" className={`flex-column ${styles.projectNavContainer}`}>
-                                <Nav.Item>
-                                    <Nav.Link eventKey="allProjects" className={`${styles.primaryColor}`}>All Projects</Nav.Link>
-                                </Nav.Item>
 
-                                <Nav.Item>
-                                    <Nav.Link eventKey="remittance" className={`${styles.primaryColor}`}>Remittance</Nav.Link>
-                                </Nav.Item>
-
-                                <Nav.Item>
-                                    <Nav.Link eventKey="blockchain" className={`${styles.primaryColor}`}>Blockchain</Nav.Link>
-                                </Nav.Item>
-
-                                <Nav.Item>
-                                    <Nav.Link eventKey="trading" className={`${styles.primaryColor}`}>Trading</Nav.Link>
-                                </Nav.Item>
-
-                                <Nav.Item>
-                                    <Nav.Link eventKey="fantasy" className={`${styles.primaryColor}`}>Fantasy</Nav.Link>
-                                </Nav.Item>
-                            </Nav>
-                        </Col>
-                        <Col sm={9} lg={10}>
-                            <Tab.Content>
-                                <Tab.Pane eventKey="allProjects">
-                                    <div className={`${styles.projectCardContainer}`}>
-                                        {
-                                            allProjects.map((element) => (
-                                                <ProjectCard key={element.title} content={element} />
-                                            ))
-                                        }
+        <>
+            <div className={`${styles.diverse_sec}`}>
+                <div className="container">
+                    <Heading heading="Projects" />
+                    <h1 className='text-center scrollReveal w-100 mb-5'>Featured Projects</h1>
+                    <div className="row">
+                        <div className="col col-md-12 text-center m-auto">
+                            <div className={styles.our_eco}>
+                                <a href="https://vijaybansal2004.github.io/Everest-Remit/" target="_blank"
+                                    className={`${styles.text_right} ${styles.branches} ${styles.branch1} ${styles.comingsoon}`}>
+                                    <label>
+                                        Everest <br /> Remit
+                                    </label>
+                                    <span>
+                                        <img src="/images/everestRemit_favicon.svg" />
+                                    </span>
+                                    <div className={styles.intro_wrap}>
+                                        <p className={styles.intro_wrap_text}>
+                                            Facilitating Swift Money Transfers To Nepal
+                                            <br />
+                                            Technologies: HTML, CSS, JavaScript, Figma e.t.c
+                                        </p>
                                     </div>
-                                </Tab.Pane>
-
-
-                                <Tab.Pane eventKey="remittance">
-                                    <div className={`${styles.projectCardContainer}`}>
-                                        {
-                                            remittanceContent.map((element) => (
-                                                <ProjectCard key={element.title} content={element} />
-                                            ))
-                                        }
+                                </a>
+                                <a href="https://vijaybansal2004.github.io/AIO-Exchange/" target="_blank"
+                                    className={`${styles.text_left} ${styles.branches} ${styles.branch2} ${styles.comingsoon}`}>
+                                    <span>
+                                        <img src="/images/aioExchange_favicon.svg" />
+                                    </span>
+                                    <label>
+                                        AIO <br /> Exchange
+                                    </label>
+                                    <div className={styles.intro_wrap}>
+                                        <p className={styles.intro_wrap_text}>
+                                            Simplify Your Crypto Trading Experience
+                                            <br />
+                                            Technologies: HTML, CSS, JavaScript, Figma e.t.c
+                                        </p>
                                     </div>
-                                </Tab.Pane>
-
-                                <Tab.Pane eventKey="blockchain">
-                                    <div className={`${styles.projectCardContainer}`}>
-                                        {
-                                            blockchainContent.map((element) => (
-                                                <ProjectCard key={element.title} content={element} />
-                                            ))
-                                        }
+                                </a>
+                                <a href="https://answerautismtherapy.com/" target="_blank"
+                                    className={`${styles.text_left} ${styles.branches} ${styles.branch3} ${styles.comingsoon}`}>
+                                    <span>
+                                        <img src="/images/answerAutism_favicon.svg" />
+                                    </span>
+                                    <label>
+                                        Answer
+                                        <br /> For Autism
+                                    </label>
+                                    <div className={styles.intro_wrap}>
+                                        <p className={styles.intro_wrap_text}>
+                                            Effective Online Autism Intervention Programs for Your Child&apos;s Growth
+                                            <br />
+                                            Technologies: Wordpress, Elementer, JavaScript, Figma e.t.c
+                                        </p>
                                     </div>
-                                </Tab.Pane>
-
-                                <Tab.Pane eventKey="trading">
-                                    <div className={`${styles.projectCardContainer}`}>
-                                        {
-                                            tradingContent.map((element) => (
-                                                <ProjectCard key={element.title} content={element} />
-                                            ))
-                                        }
+                                </a>
+                                {/* {
+                                    featuredProjects.map((element) => {
+                                        <FeaturedProjectCard key={element.url} content={element} />
+                                    })
+                                } */}
+                                <div className={styles.mid_sec}>
+                                    <img
+                                        src="/images/webcom_favicon.svg"
+                                        className={styles.rotating_coin}
+                                        alt="img"
+                                    />
+                                </div>
+                                <a href="https://actautismtherapy.com/" target="_blank"
+                                    className={`${styles.text_left} ${styles.branches} ${styles.branch4} ${styles.comingsoon}`}>
+                                    <span>
+                                        <img src="/images/actAutism_favicon.svg" />
+                                    </span>
+                                    <label>
+                                        Act
+                                        <br /> For Autism
+                                    </label>
+                                    <div className={styles.intro_wrap}>
+                                        <p className={styles.intro_wrap_text}>
+                                            Unlock Your Child&apos;s Potential with Our Developmental Therapeutic Program
+                                            <br />
+                                            Technologies: Wordpress, Elementer, Figma, JavaScript  e.t.c
+                                        </p>
                                     </div>
-                                </Tab.Pane>
-
-                                <Tab.Pane eventKey="fantasy">
-                                    <div className={`${styles.projectCardContainer}`}>
-                                        {
-                                            fantasyContent.map((element) => (
-                                                <ProjectCard key={element.title} content={element} />
-                                            ))
-                                        }
+                                </a>
+                                <a href="https://vijaybansal2004.github.io/juststake-dashboard" target="_blank"
+                                    className={`${styles.text_right} ${styles.branches} ${styles.branch6} ${styles.comingsoon}`}>
+                                    <label>
+                                        JustStake <br /> Dashboard
+                                    </label>
+                                    <span>
+                                        <img src="/images/juststake_favicon.svg" />
+                                    </span>
+                                    <div className={styles.intro_wrap}>
+                                        <p className={styles.intro_wrap_text}>
+                                            Admin Panel
+                                            <br />
+                                            Technologies: HTML, CSS, Figma, JavaScript  e.t.c
+                                        </p>
                                     </div>
-                                </Tab.Pane>
-                            </Tab.Content>
-                        </Col>
-                    </Row>
-                </Tab.Container>
+                                </a>
+                                <a href="https://webcomsystems.net/" target="_blank"
+                                    className={`${styles.text_right} ${styles.branches} ${styles.branch7} ${styles.comingsoon}`}>
+                                    <label>
+                                        Webcom
+                                        <br /> Systems
+                                    </label>
+                                    <span>
+                                        <img src="/images/webcom_favicon.svg" />
+                                    </span>
+                                    <div className={styles.intro_wrap}>
+                                        <p className={styles.intro_wrap_text}>
+                                            Blockchain Development Company
+                                            <br />
+                                            Technologies: Wordpress, wpbakery, HTML, CSS  e.t.c
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
+
+            <section id='projects' className={`${styles.projectSectionContainer} containerBlockPadding`}>
+                <div className="container">
+                    <Heading heading="Projects" />
+                    <h1 className='text-center scrollReveal w-100 mb-5'>What Can I Do ?</h1>
+                    <Tab.Container id="left-tabs-example" defaultActiveKey="allProjects" className={`${styles.projectContainer}`}>
+                        <Row className='gap-5 gap-sm-0'>
+                            <Col sm={3} lg={2}>
+                                <Nav variant="pills" className={`flex-column ${styles.projectNavContainer}`}>
+                                    <Nav.Item>
+                                        <Nav.Link eventKey="allProjects" className={`${styles.primaryColor}`}>All Projects</Nav.Link>
+                                    </Nav.Item>
+
+                                    <Nav.Item>
+                                        <Nav.Link eventKey="remittance" className={`${styles.primaryColor}`}>Remittance</Nav.Link>
+                                    </Nav.Item>
+
+                                    <Nav.Item>
+                                        <Nav.Link eventKey="blockchain" className={`${styles.primaryColor}`}>Blockchain</Nav.Link>
+                                    </Nav.Item>
+
+                                    <Nav.Item>
+                                        <Nav.Link eventKey="trading" className={`${styles.primaryColor}`}>Trading</Nav.Link>
+                                    </Nav.Item>
+
+                                    <Nav.Item>
+                                        <Nav.Link eventKey="fantasy" className={`${styles.primaryColor}`}>Fantasy</Nav.Link>
+                                    </Nav.Item>
+                                </Nav>
+                            </Col>
+                            <Col sm={9} lg={10}>
+                                <Tab.Content>
+                                    <Tab.Pane eventKey="allProjects">
+                                        <div className={`${styles.projectCardContainer}`}>
+                                            {
+                                                allProjects.map((element) => (
+                                                    <ProjectCard key={element.title} content={element} />
+                                                ))
+                                            }
+                                        </div>
+                                    </Tab.Pane>
+
+
+                                    <Tab.Pane eventKey="remittance">
+                                        <div className={`${styles.projectCardContainer}`}>
+                                            {
+                                                remittanceContent.map((element) => (
+                                                    <ProjectCard key={element.title} content={element} />
+                                                ))
+                                            }
+                                        </div>
+                                    </Tab.Pane>
+
+                                    <Tab.Pane eventKey="blockchain">
+                                        <div className={`${styles.projectCardContainer}`}>
+                                            {
+                                                blockchainContent.map((element) => (
+                                                    <ProjectCard key={element.title} content={element} />
+                                                ))
+                                            }
+                                        </div>
+                                    </Tab.Pane>
+
+                                    <Tab.Pane eventKey="trading">
+                                        <div className={`${styles.projectCardContainer}`}>
+                                            {
+                                                tradingContent.map((element) => (
+                                                    <ProjectCard key={element.title} content={element} />
+                                                ))
+                                            }
+                                        </div>
+                                    </Tab.Pane>
+
+                                    <Tab.Pane eventKey="fantasy">
+                                        <div className={`${styles.projectCardContainer}`}>
+                                            {
+                                                fantasyContent.map((element) => (
+                                                    <ProjectCard key={element.title} content={element} />
+                                                ))
+                                            }
+                                        </div>
+                                    </Tab.Pane>
+                                </Tab.Content>
+                            </Col>
+                        </Row>
+                    </Tab.Container>
+                </div>
+            </section>
+        </>
 
     )
 }
