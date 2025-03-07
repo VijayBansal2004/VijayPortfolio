@@ -22,19 +22,19 @@ const Layout = () => {
                 <Routes>
                     <Route path="/" element={
                         <>
-                            <Home />
-                            <AboutMe />
+                            {/* <Home />
+                            <AboutMe /> */}
                             <Skills />
                             <Projects />
-                            <ContactMe />
+                            {/* <ContactMe /> */}
                         </>
                     } />
-                    <Route path="/about" element={<AboutMe />} />
+                    {/* <Route path="/about" element={<AboutMe />} />
                     <Route path="/skills" element={<Skills />} />
                     <Route path="/projects" element={<Projects />} />
                     <Route path="/contact" element={<ContactMe />} />
                     <Route path="/blogs" element={<Blogs />} />
-                    <Route path="/login" element={<Login />} />
+                    <Route path="/login" element={<Login />} /> */}
                 </Routes>
                 <Footer />
                 <div className={`${styles.gotoHome}`}>
