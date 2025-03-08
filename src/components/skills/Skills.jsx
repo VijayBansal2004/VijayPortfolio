@@ -86,9 +86,9 @@ const Skills = () => {
                 <div
                     className={`${styles.skillsContainer} containerBlockPadding text-center container position-relative`}>
                     <Heading heading="Skills" />
-                    <h1 className="text-center mb-5 scrollReveal w-100">
+                    <h2 className="text-center mb-5 scrollReveal w-100">
                         Why Choose Me ?
-                    </h1>
+                    </h2>
                     <p className={`${styles.scrollReveal}`}>
                         I have a strong front-end development skill set, specializing in
                         building user-centric applications in domains like remittance,
@@ -111,9 +111,9 @@ const Skills = () => {
 
                     <div className={`${styles.skillsPercentage} row`}>
                         <div className="col-12 col-lg-6">
-                            <h2 className={`${styles.skillsPercentageHeading}`}>
+                            <h3 className={`${styles.skillsPercentageHeading}`}>
                                 Technologies
-                            </h2>
+                            </h3>
                         </div>
 
                         <div className={` col-12 col-lg-6`}>

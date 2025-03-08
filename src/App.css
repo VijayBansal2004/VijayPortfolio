@@ -41,6 +41,10 @@ body {
   padding-block: 100px;
 }
 
+h2 {
+  font-size: 40px !important;
+}
+
 /* utilities */
 .primaryBtn {
   border: none !important;
@@ -194,5 +198,9 @@ body {
 
   .containerBlockPadding {
     padding-block: 50px;
+  }
+
+  h2 {
+    font-size: 30px !important;
   }
 }

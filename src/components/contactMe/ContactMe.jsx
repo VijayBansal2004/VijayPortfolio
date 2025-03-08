@@ -25,7 +25,7 @@ const ContactMe = () => {
                 </div>
                 <div className={`${styles.formContainer} w-100`}>
                     <Heading heading="Contact Me" />
-                    <h1 className='text-center mb-2 scrollReveal w-100'>Get In Touch!</h1>
+                    <h2 className='text-center mb-2 scrollReveal w-100'>Get In Touch!</h2>
 
                     <form className={`${styles.contactFeildContainer}`} onSubmit={handleSubmit}>
                         <div className="fadeUpAnimation">

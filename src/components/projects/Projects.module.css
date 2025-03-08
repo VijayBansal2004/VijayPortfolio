@@ -134,15 +134,19 @@
   justify-content: center;
   min-width: 350px;
   position: relative;
+  overflow: hidden;
 }
 
 .mid_sec img {
   width: 100%;
-  max-width: 90%;
   position: initial;
   transform: initial;
   top: initial;
   left: initial;
+
+  object-position: top;
+  height: inherit;
+  object-fit: cover;
 }
 
 a.branches {
@@ -494,15 +498,15 @@ a.branches.text_right .intro_wrap {
     left: inherit !important;
     right: inherit !important;
     flex-direction: column;
-    margin: 0 0 25px 0;
+    margin: 0;
     width: 33%;
   }
   a.branches:before {
     display: none;
   }
   .our_eco {
-    /* flex-direction: column; */
     flex-wrap: wrap;
+    min-height: 560px;
   }
   a.branches label {
     margin: 10px 0 0 0 !important;
