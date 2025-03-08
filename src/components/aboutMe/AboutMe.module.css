@@ -4,7 +4,7 @@
 }
 
 .skillAtTitle {
-  color: #f26602;
+  color: var(--oringe-color);
   font-weight: bold;
   text-align: start;
   margin-bottom: 10px;
@@ -74,7 +74,7 @@
     position: absolute;
     right: -15px;
     top: -25px;
-    background: #f26602;
+    background: var(--oringe-color);
     padding: 10px;
     border-radius: 50%;
 }

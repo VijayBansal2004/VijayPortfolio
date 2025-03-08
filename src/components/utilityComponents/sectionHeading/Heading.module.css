@@ -1,6 +1,6 @@
 .headingStyles {
     font-size: 1.2rem;
-    color: #f26602;
+    color: var(--oringe-color);
     font-weight: bold;
     text-align: center;
 }

@@ -21,7 +21,7 @@
     transition: all .2s ease-in;
 
     &:hover {
-        color: #f26602 !important;
+        color: var(--oringe-color) !important;
     }
 }
 

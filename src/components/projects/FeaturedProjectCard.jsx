@@ -28,7 +28,7 @@ const FeaturedProjectCard = ({ content, index }) => {
             }
             <div className={styles.intro_wrap}>
                 <p className={styles.intro_wrap_text}>
-                    {content?.details} <br /> Technologies: {content?.technology} e.t.c
+                    {content?.details} <br /> Technologies: <b className={styles.technology}>{content?.technology} e.t.c</b>
                 </p>
             </div>
         </a>

@@ -96,7 +96,7 @@
 }
 
 .skillPercentageBar {
-  background-color: #f26602;
+  background-color: var(--oringe-color);
   height: 5px;
   border-radius: 10px;
 }

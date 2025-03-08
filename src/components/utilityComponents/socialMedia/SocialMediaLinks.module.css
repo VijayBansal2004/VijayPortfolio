@@ -4,6 +4,6 @@
 }
 
 .socialMediaLinks:hover {
-    color: #f26602;
+    color: var(--oringe-color);
     scale: 1.2;
 }
