@@ -22,14 +22,14 @@ const Layout = () => {
                 <Routes>
                     <Route path="/" element={
                         <>
-                            <Home />
-                            <AboutMe />
+                            {/* <Home />
+                            <AboutMe /> */}
                             <Skills />
                             <Projects />
                             <ContactMe />
                         </>
                     } />
-                    <Route path="/about" element={<AboutMe />} />
+                    {/* <Route path="/about" element={<AboutMe />} /> */}
                     <Route path="/skills" element={<Skills />} />
                     <Route path="/projects" element={<Projects />} />
                     <Route path="/contact" element={<ContactMe />} />

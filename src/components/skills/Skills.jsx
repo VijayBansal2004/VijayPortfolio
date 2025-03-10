@@ -3,6 +3,7 @@ import styles from "./Skills.module.css";
 import SkillContainer from "./SkillContainer";
 import SkillsPercentage from "./SkillsPercentage";
 import Heading from "../utilityComponents/sectionHeading/Heading";
+import OverCards from "./OverCards";
 
 const Skills = () => {
     const skills = [
@@ -122,6 +123,11 @@ const Skills = () => {
                             ))}
                         </div>
                     </div>
+                </div>
+            </section>
+            <section>
+                <div className="container">
+                    <OverCards />
                 </div>
             </section>
         </>
