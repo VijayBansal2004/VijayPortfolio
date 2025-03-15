@@ -13,11 +13,11 @@ const Footer = () => {
 
                 <div className="footerLinksContainer col-12 col-lg-6 align-content-center text-center text-lg-start">
                     <ul className={`${styles.footerLinks} m-0 justify-content-center flex-column flex-sm-row`}>
-                        <NavLink to="/" className={`${styles.navlink}`}>Home</NavLink>
-                        <NavLink to="/about" className={`${styles.navlink}`}>About Me</NavLink>
-                        <NavLink to="/skills" className={`${styles.navlink}`}>Skills</NavLink>
-                        <NavLink to="/projects" className={`${styles.navlink}`}>Projects</NavLink>
-                        <NavLink to="/contact" className={`${styles.navlink}`}>Contact Me</NavLink>
+                        <NavLink to="/" className={({ isActive }) => (isActive ? `text-white ${styles.navlink} ${styles.active}` : `text-white ${styles.navlink}`)}>Home</NavLink>
+                        <NavLink to="/about" className={({ isActive }) => (isActive ? `text-white ${styles.navlink} ${styles.active}` : `text-white ${styles.navlink}`)}>About Me</NavLink>
+                        <NavLink to="/skills" className={({ isActive }) => (isActive ? `text-white ${styles.navlink} ${styles.active}` : `text-white ${styles.navlink}`)}>Skills</NavLink>
+                        <NavLink to="/projects" className={({ isActive }) => (isActive ? `text-white ${styles.navlink} ${styles.active}` : `text-white ${styles.navlink}`)}>Projects</NavLink>
+                        <NavLink to="/contact" className={({ isActive }) => (isActive ? `text-white ${styles.navlink} ${styles.active}` : `text-white ${styles.navlink}`)}>Contact Me</NavLink>
                         {/* <NavLink to="/blogs" className={`${styles.navlink}`}>Blogs</NavLink> */}
                     </ul>
                 </div>

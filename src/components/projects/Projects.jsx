@@ -12,25 +12,25 @@ const Projects = () => {
 
     const remittanceContent = [
         {
-            imagePath: '/images/everest-remit.webp',
+            imagePath: '/projects/everest-remit.webp',
             websiteURL: "https://vijaybansal2004.github.io/Everest-Remit/",
             title: 'Everest Remit',
             discription: 'Facilitatingimage Swift Money Transfers To Nepal!',
         },
         {
-            imagePath: '/images/juststake.webp',
+            imagePath: '/projects/juststake.webp',
             websiteURL: "https://vijaybansal2004.github.io/juststake-dashboard",
             title: 'Juststake',
             discription: 'Admin dashboard',
         },
         {
-            imagePath: '/images/kantipur.webp',
+            imagePath: '/projects/kantipur.webp',
             websiteURL: "https://vijaybansal2004.github.io/Kantipur-Rimit",
             title: 'Kantipur Remit',
             discription: 'Send money to Nepal with Kantipur Remit !',
         },
         {
-            imagePath: '/images/clearPath.webp',
+            imagePath: '/projects/clearPath.webp',
             websiteURL: "https://vijaybansal2004.github.io/clearpath",
             title: 'ClearPath Remit',
             discription: 'Save up to 3x on international transfers across more than 50 currencies, with no hidden fees.',
@@ -39,19 +39,19 @@ const Projects = () => {
 
     const blockchainContent = [
         {
-            imagePath: '/images/blockNet.webp',
+            imagePath: '/projects/blockNet.webp',
             websiteURL: "https://vijaybansal2004.github.io/blocknetx",
             title: 'BlocknetX',
             discription: 'At Block Net, Blockchain meets Financial Empowerment where Exchange, NFTs and Gaming thrive in the world of Web 3.0',
         },
         {
-            imagePath: '/images/tronWolf.webp',
+            imagePath: '/projects/tronWolf.webp',
             websiteURL: "https://vijaybansal2004.github.io/TronWolf",
             title: 'TronWolf',
             discription: 'DISCOVER YOUR INNER BEAST AND MAKE YOUR WOLFPACK HOWL!',
         },
         {
-            imagePath: '/images/axiBloc.webp',
+            imagePath: '/projects/axiBloc.webp',
             websiteURL: "https://axibloc.netlify.app",
             title: 'Axibloc',
             discription: 'Achieving enduring performance for mission-critical priorities',
@@ -60,38 +60,38 @@ const Projects = () => {
 
     const tradingContent = [
         {
-            imagePath: '/images/aio-exchange.webp',
+            imagePath: '/projects/aio-exchange.webp',
             websiteURL: "https://vijaybansal2004.github.io/AIO-Exchange",
             title: 'AIO Exchange',
             discription: `Trade effortlessly across multiple platforms and leverage price differences, all within AIO’s unified ecosystem.`,
         },
         {
-            imagePath: '/images/fintrade-pool.webp',
+            imagePath: '/projects/fintrade-pool.webp',
             websiteURL: "https://vijaybansal2004.github.io/fintrade-pool",
             title: 'Fintrade Pool',
             discription: `Employ our Crypto Trading Platform & Automated Bots powered with smart algorithms and advanced features for spot and futures exchanges!`,
         },
         {
-            imagePath: '/images/bitNetX.webp',
+            imagePath: '/projects/bitNetX.webp',
             websiteURL: "https://vijaybansal2004.github.io/bitnetX",
             title: 'BitnetX',
             discription: `Make quick purchases and withdrawals to trade in the world's top cryptocurrencies, including Bitcoin, Ethereum, Dogecoin, Tether, and more!`,
         },
         {
-            imagePath: '/images/xchangeOn.webp',
+            imagePath: '/projects/xchangeOn.webp',
             websiteURL: "https://vijaybansal2004.github.io/XchangeOn",
             title: 'XchangeOn',
             discription: `Trade cryptocurrencies across different exchanges through XchangOn’s Arbitrage Trading feature and enjoy the benefits of price differentials between different exchanges.`,
         },
         {
-            imagePath: '/images/upshot-Bot.webp',
+            imagePath: '/projects/upshot-Bot.webp',
             websiteURL: "https://vijaybansal2004.github.io/UpshotBot",
             title: 'UpshotBot',
             discription: `Let our advanced bot handle the heavy lifting by finding and acting on price gaps across crypto exchanges.`,
         },
 
         {
-            imagePath: '/images/crypto.webp',
+            imagePath: '/projects/crypto.webp',
             websiteURL: "https://vijaybansal2004.github.io/crypto",
             title: 'Crypto',
             discription: `Partner with the world’s largest retail broker and take advantage of exceptional market conditions.`,
@@ -100,13 +100,13 @@ const Projects = () => {
 
     const fantasyContent = [
         {
-            imagePath: '/images/hotSport.webp',
+            imagePath: '/projects/hotSport.webp',
             websiteURL: "https://vijaybansal2004.github.io/hotsport",
             title: 'Hotsport',
             discription: 'Playing fantasy cricket on HotSports is easy and enjoyable! Simply assemble your team of 11 players and let the fun begin.',
         },
         {
-            imagePath: '/images/super11.webp',
+            imagePath: '/projects/super11.webp',
             websiteURL: "https://vijaybansal2004.github.io/Super11",
             title: 'Super11',
             discription: 'GETTING STARTED WITH SUPER11 IS A BREEZE!',
@@ -118,7 +118,7 @@ const Projects = () => {
     const featuredProjectsLeft = [
         {
             url: "https://vijaybansal2004.github.io/Everest-Remit/",
-            imageUrl: "/images/everestRemit_favicon.svg",
+            imageUrl: "/svg/everestRemit_favicon.svg",
             name: "Everest Remit",
             details: "Facilitating Swift Money Transfers To Nepal",
             technology: "HTML, CSS, JavaScript, Figma",
@@ -126,7 +126,7 @@ const Projects = () => {
         },
         {
             url: "https://vijaybansal2004.github.io/AIO-Exchange/",
-            imageUrl: "/images/aioExchange_favicon.svg",
+            imageUrl: "/svg/aioExchange_favicon.svg",
             name: "AIO Exchange",
             details: "Simplify Your Crypto Trading Experience",
             technology: "HTML, CSS, JavaScript, Figma",
@@ -134,7 +134,7 @@ const Projects = () => {
         },
         {
             url: "https://answerautismtherapy.com/",
-            imageUrl: "/images/answerAutism_favicon.svg",
+            imageUrl: "/svg/answerAutism_favicon.svg",
             name: "Answer For Autism",
             details: "Effective Online Autism Intervention Programs for Your Child&apos;s Growth",
             technology: "Wordpress, Elementer, JavaScript, Figma",
@@ -144,7 +144,7 @@ const Projects = () => {
     const featuredProjectsRight = [
         {
             url: "https://actautismtherapy.com/",
-            imageUrl: "/images/actAutism_favicon.svg",
+            imageUrl: "/svg/actAutism_favicon.svg",
             name: "Act For Autism",
             details: "Unlock Your Child&apos;s Potential with Our Developmental Therapeutic Program",
             technology: "Wordpress, Elementer, Figma, JavaScript",
@@ -152,7 +152,7 @@ const Projects = () => {
         },
         {
             url: "https://vijaybansal2004.github.io/juststake-dashboard",
-            imageUrl: "/images/juststake_favicon.svg",
+            imageUrl: "/svg/juststake_favicon.svg",
             name: "JustStake Dashboard",
             details: "Admin Panel",
             technology: "HTML, CSS, Figma, JavaScript",
@@ -160,7 +160,7 @@ const Projects = () => {
         },
         {
             url: "https://webcomsystems.net/",
-            imageUrl: "/images/webcom_favicon.svg",
+            imageUrl: "/svg/webcom_favicon.svg",
             name: "Webcom Systems",
             details: "Blockchain Development Company",
             technology: "Wordpress, wpbakery, HTML, CSS",

@@ -8,43 +8,43 @@ import OverCards from "./OverCards";
 const Skills = () => {
     const skills = [
         {
-            imgPath: "/images/htmlLogo.svg",
+            imgPath: "/svg/htmlLogo.svg",
         },
         {
-            imgPath: "/images/cssLogo.svg",
+            imgPath: "/svg/cssLogo.svg",
         },
         {
-            imgPath: "/images/javascriptLogo.svg",
+            imgPath: "/svg/javascriptLogo.svg",
         },
         {
-            imgPath: "/images/reactJSLogo.svg",
+            imgPath: "/svg/reactJSLogo.svg",
         },
         {
-            imgPath: "/images/wordpressLogo.svg",
+            imgPath: "/svg/wordpressLogo.svg",
         },
         {
-            imgPath: "/images/htmlLogo.svg",
+            imgPath: "/svg/htmlLogo.svg",
         },
         {
-            imgPath: "/images/cssLogo.svg",
+            imgPath: "/svg/cssLogo.svg",
         },
         {
-            imgPath: "/images/gitLogo.svg",
+            imgPath: "/svg/gitLogo.svg",
         },
         {
-            imgPath: "/images/githubLogo.svg",
+            imgPath: "/svg/githubLogo.svg",
         },
         {
-            imgPath: "/images/illustratorLogo.svg",
+            imgPath: "/svg/illustratorLogo.svg",
         },
         {
-            imgPath: "/images/javascriptLogo.svg",
+            imgPath: "/svg/javascriptLogo.svg",
         },
         {
-            imgPath: "/images/reactJSLogo.svg",
+            imgPath: "/svg/reactJSLogo.svg",
         },
         {
-            imgPath: "/images/illustratorLogo.svg",
+            imgPath: "/svg/illustratorLogo.svg",
         },
     ];
 

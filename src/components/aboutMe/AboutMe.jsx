@@ -22,7 +22,7 @@ const AboutMe = () => {
                     <div className={styles.cards}>
                         <div className={styles.card}>
                             <div className={styles.img_cont}>
-                                <img src="/images/tools-trade.svg" alt="" />
+                                <img src="/svg/tools-trade.svg" alt="" />
                             </div>
                             <div>
                                 <h3>Tools of the Trade</h3>
@@ -37,7 +37,7 @@ const AboutMe = () => {
                         </div>
                         <div className={styles.card}>
                             <div className={styles.img_cont}>
-                                <img src="/images/dev-approach.svg" alt="" />
+                                <img src="/svg/dev-approach.svg" alt="" />
                             </div>
                             <div>
                                 <h3>How I Approach Development</h3>
@@ -52,7 +52,7 @@ const AboutMe = () => {
                         </div>
                         <div className={styles.card}>
                             <div className={styles.img_cont}>
-                                <img src="/images/chess.svg" alt="" />
+                                <img src="/svg/chess.svg" alt="" />
                             </div>
                             <div>
                                 <h3>Did You Know?</h3>

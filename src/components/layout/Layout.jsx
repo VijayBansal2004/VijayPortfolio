@@ -22,14 +22,14 @@ const Layout = () => {
                 <Routes>
                     <Route path="/" element={
                         <>
-                            {/* <Home />
-                            <AboutMe /> */}
+                            <Home />
+                            <AboutMe />
                             <Skills />
                             <Projects />
                             <ContactMe />
                         </>
                     } />
-                    {/* <Route path="/about" element={<AboutMe />} /> */}
+                    <Route path="/about" element={<AboutMe />} />
                     <Route path="/skills" element={<Skills />} />
                     <Route path="/projects" element={<Projects />} />
                     <Route path="/contact" element={<ContactMe />} />
@@ -38,7 +38,7 @@ const Layout = () => {
                 </Routes>
                 <Footer />
                 <div className={`${styles.gotoHome}`}>
-                    <Nav.Link href="#home" className="btn primaryBtn">^</Nav.Link>
+                    <Nav.Link href="#root" className="btn primaryBtn">^</Nav.Link>
                 </div>
             </Router>
         </>
