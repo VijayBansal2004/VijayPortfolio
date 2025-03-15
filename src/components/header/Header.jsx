@@ -11,6 +11,13 @@ const Header = () => {
         <Navbar collapseOnSelect expand="lg" className={styles.navbar}>
             <Container className="pb-3 pb-lg-0">
                 <NavLink to="/" className={`${styles.textColor}  ${styles.brandLogo} fw-bolder fs-1 `}>Vijay</NavLink>
+                {/* <Navbar.Brand href="#home">
+                    <img
+                        src="/svg/logo.svg"
+                        className="d-inline-block align-top"
+                        alt=" logo"
+                    />
+                </Navbar.Brand> */}
                 <Navbar.Toggle className={`${styles.hamburger}`} aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className={` ${styles.navlinkContainer}`}>
