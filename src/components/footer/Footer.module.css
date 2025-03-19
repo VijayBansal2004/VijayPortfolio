@@ -6,9 +6,13 @@
     padding-block: 20px;
 }
 
-.footer .logo{
+/* .footer .logo{
     text-decoration: none;
     color: white;
+} */
+
+.footer .logo_img{
+    height: 80px;
 }
 
 .footer .footerLinks {
@@ -29,6 +33,9 @@
     .footer .footerLinks {
         padding: 0;
         gap: 10px;
+    }
+    .footer .logo_img{
+        height: 60px;
     }
 }
 

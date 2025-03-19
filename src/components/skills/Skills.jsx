@@ -51,30 +51,37 @@ const Skills = () => {
     const skillPercentage = [
         {
             skillName: "HTML",
+            img_url: "/svg/htmlLogo.svg",
             skillPercentage: "95%",
         },
         {
             skillName: "CSS",
+            img_url: "/svg/cssLogo.svg",
             skillPercentage: "91%",
         },
         {
             skillName: "JS",
+            img_url: "/svg/javascriptLogo.svg",
             skillPercentage: "85%",
         },
         {
             skillName: "React JS",
+            img_url: "/svg/reactJSLogo.svg",
             skillPercentage: "80%",
         },
         {
             skillName: "Illustrator",
+            img_url: "/svg/illustratorLogo.svg",
             skillPercentage: "75%",
         },
         {
             skillName: "Git/Github",
+            img_url: "/svg/gitLogo.svg",
             skillPercentage: "84%",
         },
         {
             skillName: "Wordpress",
+            img_url: "/svg/wordpressLogo.svg",
             skillPercentage: "60%",
         },
     ];
@@ -83,14 +90,14 @@ const Skills = () => {
         <>
             <section
                 id="skills"
-                className={`${styles.skillsSection} align-content-center`}>
+                className={`${styles?.skillsSection} align-content-center`}>
                 <div
-                    className={`${styles.skillsContainer} containerBlockPadding text-center container position-relative`}>
+                    className={`${styles?.skillsContainer} containerBlockPadding text-center container position-relative`}>
                     <Heading heading="Skills" />
                     <h2 className="text-center mb-5 scrollReveal w-100">
                         Why Choose Me ?
                     </h2>
-                    <p className={`${styles.scrollReveal}`}>
+                    <p className={`${styles?.scrollReveal}`}>
                         I have a strong front-end development skill set, specializing in
                         building user-centric applications in domains like remittance,
                         blockchain, cryptocurrency, and fantasy gaming. With a core
@@ -100,19 +107,19 @@ const Skills = () => {
                         and collaboration.
                     </p>
 
-                    <div className={styles.skillContainer}>
+                    <div className={styles?.skillContainer}>
                         {skills.map((element, index) => (
                             <SkillContainer
-                                styles={styles.skillLogo}
+                                styles={styles?.skillLogo}
                                 element={element}
                                 key={index}
                             />
                         ))}
                     </div>
 
-                    <div className={`${styles.skillsPercentage} row`}>
+                    <div className={`${styles?.skillsPercentage} row`}>
                         <div className="col-12 col-lg-6">
-                            <h3 className={`${styles.skillsPercentageHeading}`}>
+                            <h3 className={`${styles?.skillsPercentageHeading}`}>
                                 Technologies
                             </h3>
                         </div>

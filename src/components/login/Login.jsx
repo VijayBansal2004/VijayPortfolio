@@ -36,7 +36,7 @@ const Login = () => {
     }
     return (
         <>
-            <div className={`${styles.login_container} container`}>
+            <div className={`${styles?.login_container} container`}>
                 {
                     animatedIcons.map((img) => (
                         <AnimatedIcons key={img.imgURL} imgURL={img.imgURL} imgName={img.imgName} />

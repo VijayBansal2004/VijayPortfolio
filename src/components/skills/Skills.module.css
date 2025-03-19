@@ -59,6 +59,15 @@
   }
 }
 
+.img_cont{
+  max-width: 25px;
+  margin-bottom: 6px;
+}
+
+.img_cont img{
+  width: 100%;
+}
+
 @keyframes skillsScroll {
   0% {
     transform: translateX(-50vw);
@@ -114,6 +123,13 @@
 
   .skillsPercentage {
     padding-top: 50px !important;
+  }
+
+  .skillName,
+  .skillPercentage {
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 0px;
   }
 }
 

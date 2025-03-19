@@ -85,6 +85,10 @@
     z-index: 100;
 }
 
+.logo_img{
+    height: 80px;
+}
+
 @media(prefers-reduced-motion: no-preference) {
     .navbar {
         top: -10%;
@@ -128,5 +132,8 @@
 @media (max-width: 550px) {
     .navlink{
         padding: 7px 0px !important;
+    }
+    .logo_img{
+        height: 60px;
     }
 }

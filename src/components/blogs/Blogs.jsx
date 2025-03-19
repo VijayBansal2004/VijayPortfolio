@@ -109,18 +109,18 @@ const Blogs = () => {
 
             <div data-bs-theme="dark" className="row">
                 {blogs.map(blog => (
-                    <div id={blog.id} key={blog.id} className={`col-12 col-md-6 col-lg-3 pt-3 pb-3 ${styles.blog_container}`} onClick={(e) => handleCardClick(e, blog.id)}>
-                        <Card className={`w-100 h-100 ${styles.card}`} >
+                    <div id={blog.id} key={blog.id} className={`col-12 col-md-6 col-lg-3 pt-3 pb-3 ${styles?.blog_container}`} onClick={(e) => handleCardClick(e, blog.id)}>
+                        <Card className={`w-100 h-100 ${styles?.card}`} >
                             <Card.Img variant="top" src={blog.content_url} />
                             <Card.Body>
                                 <Card.Title>{blog.title}</Card.Title>
-                                <Card.Text className={`${styles.summary}`}>
+                                <Card.Text className={`${styles?.summary}`}>
                                     {blog.summary}
                                 </Card.Text>
                             </Card.Body>
                             <Card.Footer>
-                                <p className={`text-muted m-0 p-0 ${styles.date}`}>Last updated: {blog.published_date}</p>
-                                <p className={`text-muted m-0 p-0 ${styles.author}`}>Author: {blog.author}</p>
+                                <p className={`text-muted m-0 p-0 ${styles?.date}`}>Last updated: {blog.published_date}</p>
+                                <p className={`text-muted m-0 p-0 ${styles?.author}`}>Author: {blog.author}</p>
                             </Card.Footer>
                         </Card>
                     </div>
