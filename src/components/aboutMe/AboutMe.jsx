@@ -68,7 +68,7 @@ const AboutMe = () => {
                         <NavLink to="/contact">
                             <Button className="secondaryBtn fadeUpAnimation" type="button" size="lg">Contact Me</Button>
                         </NavLink>
-                        <NavLink to="https://drive.google.com/file/d/11kjO3LLICN_kWkQFj8fhr5-ApX04PDRO/view?usp=drivesdk" target='_black' download>
+                        <NavLink to="https://github.com/VijayBansal2004/resume/blob/main/Resume.pdf" target='_black' download>
                             <Button className="primaryBtn fadeUpAnimation" type="button" size="lg">Resume</Button>
                         </NavLink>
                     </div>

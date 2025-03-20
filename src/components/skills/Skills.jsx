@@ -132,11 +132,11 @@ const Skills = () => {
                     </div>
                 </div>
             </section>
-            <section>
+            {/* <section>
                 <div className="container">
                     <OverCards />
                 </div>
-            </section>
+            </section> */}
         </>
     );
 };
