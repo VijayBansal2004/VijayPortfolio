@@ -25,7 +25,7 @@ const Home = () => {
             imgURL: "/images/overlapedSqrs.webp",
             imgName: "overlapedSqrs",
         },
-    ]
+    ];
 
     return (
         <>

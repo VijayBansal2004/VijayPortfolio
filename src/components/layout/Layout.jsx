@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import Header from "../header/Header"
 import Home from "../heroSection/Home"
 import Skills from "../skills/Skills"
@@ -44,7 +44,7 @@ const Layout = () => {
                         <Route path="/skills" element={<Skills />} />
                         <Route path="/projects" element={<Projects />} />
                         <Route path="/contact" element={<ContactMe />} />
-                        <Route path="/blogs" element={<Blogs />} />
+                        {/* <Route path="/blogs" element={<Blogs />} /> */}
                         <Route path="/login" element={<Login />} />
                     </Routes>
                     <Footer />
