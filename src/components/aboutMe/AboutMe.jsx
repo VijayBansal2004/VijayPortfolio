@@ -2,6 +2,8 @@ import styles from "./AboutMe.module.css"
 import Heading from '../utilityComponents/sectionHeading/Heading'
 import { Button } from 'react-bootstrap'
 import { NavLink } from 'react-router-dom'
+import Card from "../utilityComponents/card/Card"
+import card from "./data.card"
 
 const AboutMe = () => {
     return (
@@ -19,50 +21,9 @@ const AboutMe = () => {
                     <p className={styles?.skillAtTitle}>Front-end Developer</p>
                     <p className='text-start fadeUpAnimation text-center text-lg-start'>I am a highly motivated and results-oriented Front-End Developer with expertise in HTML, CSS, Bootstrap, and React.js. I excel in creating responsive, visually compelling websites that focus on delivering seamless user experiences and driving engagement. With a solid understanding of modern web development technologies, I am adept at transforming complex requirements into efficient, scalable solutions. My passion for innovation and continuous learning drives me to stay updated with the latest industry trends, ensuring the delivery of cutting-edge digital experiences that align with business objectives.</p>
                     <div className={styles?.cards}>
-                        <div className={styles?.card}>
-                            <div className={styles?.img_cont}>
-                                <img loading="lazy" src="/svg/tools-trade.svg" alt="" />
-                            </div>
-                            <div>
-                                <h3>Tools of the Trade</h3>
-                                <p>I work with modern front-end technologies, including:</p>
-                                <ul>
-                                    <li>React.js & TypeScript</li>
-                                    <li>JavaScript (ES6+)</li>
-                                    <li>CSS (Tailwind, Bootstrap, Sass)</li>
-                                    <li>Git & GitHub</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className={styles?.card}>
-                            <div className={styles?.img_cont}>
-                                <img loading="lazy" src="/svg/dev-approach.svg" alt="" />
-                            </div>
-                            <div>
-                                <h3>How I Approach Development</h3>
-                                <p>I believe in writing clean, maintainable, and efficient code. My approach to development revolves around:</p>
-                                <ul>
-                                    <li>User-first design</li>
-                                    <li>Performance optimization</li>
-                                    <li>Scalability & maintainability</li>
-                                    <li>Continuous learning & improvement</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className={styles?.card}>
-                            <div className={styles?.img_cont}>
-                                <img loading="lazy" src="/svg/chess.svg" alt="" />
-                            </div>
-                            <div>
-                                <h3>Did You Know?</h3>
-                                <p>When I&apos;m not coding, I enjoy:</p>
-                                <ul>
-                                    <li>Playing chess ♟️</li>
-                                    <li>Exploring the latest web designs and Themes 🚀</li>
-                                    {/* <li>Enjoys strategy games & staying updated on tech trends</li> */}
-                                </ul>
-                            </div>
-                        </div>
+                        {card.map((cardItem) => (
+                            <Card key={cardItem.title} cardItem={cardItem} />
+                        ))}
                     </div>
                     <div className="buttons d-flex align-items-center gap-2 justify-content-center justify-content-lg-start">
                         <NavLink to="/contact">
