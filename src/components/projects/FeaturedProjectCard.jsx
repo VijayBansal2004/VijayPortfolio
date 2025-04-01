@@ -9,7 +9,7 @@ const FeaturedProjectCard = ({ content, index }) => {
                 content?.placement === "left" ?
                     <>
                         <span>
-                            <img src={content?.imageUrl} />
+                            <img loading="lazy" src={content?.imageUrl} />
                         </span>
                         <label>
                             {content?.name}
@@ -21,7 +21,7 @@ const FeaturedProjectCard = ({ content, index }) => {
                             {content?.name}
                         </label>
                         <span>
-                            <img src={content?.imageUrl} />
+                            <img loading="lazy" src={content?.imageUrl} />
                         </span>
                     </>
             }

@@ -27,7 +27,7 @@ const OverCard = ({ element, index }) => {
                     </div>
                     <div className="col-12 col-lg-6">
                         <div className={styles?.image_cont}>
-                            <img src={element?.imgUrl} alt="card image" />
+                            <img loading="lazy" src={element?.imgUrl} alt="card image" />
                         </div>
                     </div>
                 </div>

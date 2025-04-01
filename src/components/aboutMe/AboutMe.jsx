@@ -12,7 +12,7 @@ const AboutMe = () => {
 
             <div className="row justify-content-center gap-5 gap-lg-0">
                 <div className={`${styles?.AboutMeImageContainer} fadeUpAnimation col-12 col-lg-3`}>
-                    <img src="/images/about_img.webp" alt="hero img" />
+                    <img loading="lazy" src="/images/about_img.webp" alt="hero img" />
                 </div>
                 <div className={`${styles?.AboutMeContentContainer} col-12 col-lg-9 d-flex flex-column`}>
                     <h2 className='text-start mb-2 scrollReveal w-100 text-center text-lg-start'>Vijay Bansal</h2>
@@ -21,7 +21,7 @@ const AboutMe = () => {
                     <div className={styles?.cards}>
                         <div className={styles?.card}>
                             <div className={styles?.img_cont}>
-                                <img src="/svg/tools-trade.svg" alt="" />
+                                <img loading="lazy" src="/svg/tools-trade.svg" alt="" />
                             </div>
                             <div>
                                 <h3>Tools of the Trade</h3>
@@ -36,7 +36,7 @@ const AboutMe = () => {
                         </div>
                         <div className={styles?.card}>
                             <div className={styles?.img_cont}>
-                                <img src="/svg/dev-approach.svg" alt="" />
+                                <img loading="lazy" src="/svg/dev-approach.svg" alt="" />
                             </div>
                             <div>
                                 <h3>How I Approach Development</h3>
@@ -51,7 +51,7 @@ const AboutMe = () => {
                         </div>
                         <div className={styles?.card}>
                             <div className={styles?.img_cont}>
-                                <img src="/svg/chess.svg" alt="" />
+                                <img loading="lazy" src="/svg/chess.svg" alt="" />
                             </div>
                             <div>
                                 <h3>Did You Know?</h3>
@@ -76,7 +76,7 @@ const AboutMe = () => {
             </div>
 
             <div className="animatedIcon">
-                <img src="/svg/plus.svg" alt="animated icon" />
+                <img loading="lazy" src="/svg/plus.svg" alt="animated icon" />
             </div>
         </div >
     )

@@ -12,7 +12,7 @@ const Header = () => {
             <Container className="pb-3 pb-lg-0">
                 {/* <NavLink to="/" className={`${styles?.textColor}  ${styles?.brandLogo} fw-bolder fs-1 `}>Vijay</NavLink> */}
                 <NavLink to="/">
-                    <img
+                    <img loading="lazy"
                         src="/svg/logo.svg"
                         className={`d-inline-block align-top ${styles?.logo_img}`}
                         alt=" logo"

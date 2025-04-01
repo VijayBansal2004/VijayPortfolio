@@ -25,7 +25,7 @@ const Projects = () => {
                                     ))
                                 }
                                 <div className={styles?.mid_sec}>
-                                    <img
+                                    <img loading="lazy"
                                         src="/images/about_img.webp"
                                         className={styles?.rotating_coin}
                                         alt="img"

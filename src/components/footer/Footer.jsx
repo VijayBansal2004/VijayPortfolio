@@ -9,7 +9,7 @@ const Footer = () => {
                 <div className="footerLogo col-12 col-lg-3 text-center text-lg-start">
                     {/* <NavLink to="/" className={styles?.logo}><h1>Vijay</h1></NavLink> */}
                     <NavLink to='/'>
-                        <img
+                        <img loading="lazy"
                             src="/svg/logo.svg"
                             className={`d-inline-block align-top ${styles?.logo_img}`}
                             alt=" logo"

@@ -3,7 +3,7 @@ import styles from './Skills.module.css'
 const SkillContainer = ({ element, styles }) => {
     return (
         <>
-            <img className={styles} src={element?.imgPath} alt="" />
+            <img loading="lazy" className={styles} src={element?.imgPath} alt="" />
         </>
     )
 }

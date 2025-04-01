@@ -55,7 +55,7 @@ const Home = () => {
 
                         <div className={`${styles?.heroSectionImgContainer} col-12 col-lg-5`}>
                             <div className={styles?.homeimg_cont}>
-                                <img src="/images/vijay_home.webp" alt="home image" />
+                                <img loading="lazy" src="/images/vijay_home.webp" alt="home image" />
                             </div>
                         </div>
                     </div>

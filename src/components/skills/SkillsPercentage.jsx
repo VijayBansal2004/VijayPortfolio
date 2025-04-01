@@ -7,7 +7,7 @@ const SkillsPercentage = ({ element }) => {
             <div className="skillPercentageDetails d-flex justify-content-between align-items-center">
                 <div className="d-flex align-items-center gap-2">
                     <div className={styles?.img_cont}>
-                        <img src={element?.img_url} alt={element?.skillName} />
+                        <img loading="lazy" src={element?.img_url} alt={element?.skillName} />
                     </div>
                     <p className={`${styles?.skillName}`}>{element?.skillName}</p>
                 </div>

@@ -18,7 +18,7 @@ function Blog(props) {
                 <Container>
                     <Row>
                         <Col xs={12}>
-                            <img className={`${styles?.content_img}`} src={props?.blog?.content_url} />
+                            <img loading="lazy" className={`${styles?.content_img}`} src={props?.blog?.content_url} />
                         </Col>
                         <Col xs={12} className='mt-4 mb-4'>
                             <p className={`text-white ${styles?.summary}`}>{props?.blog?.summary}</p>

@@ -6,7 +6,7 @@ const ProjectCard = ({ content }) => {
             <div className={`${styles?.projectCard} fadeUpAnimation`}>
                 <a href={content?.websiteURL} target='_black'>
                     <div className={`${styles?.projectImgContainer}`}>
-                        <img src={content?.imagePath} alt={content?.title} />
+                        <img loading="lazy" src={content?.imagePath} alt={content?.title} />
                     </div>
 
                     <div className={`${styles?.projectDetailsContainer}`}>
