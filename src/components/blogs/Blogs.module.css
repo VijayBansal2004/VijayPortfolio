@@ -1,9 +1,9 @@
 .blog_container {
-  max-height: 600px;
+  max-height: 700px;
 }
 
 .blog_container .summary {
-  max-height: 100px;
+  max-height: 300px;
   display: -webkit-box;
   max-width: 100%;
   -webkit-line-clamp: 4;
@@ -13,8 +13,12 @@
 
 .blog_container .card {
   background-color: #0c0c0c;
+  border: 3px solid #ffffff26;
+  border-radius: 20px;
+  overflow: hidden;
 }
-.blog_container .author,
-.blog_container .date {
-  font-style: italic;
+
+.blog_container .card img{
+  max-height: 300px;
+  object-fit: cover;
 }
