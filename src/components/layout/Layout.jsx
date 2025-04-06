@@ -1,59 +1,92 @@
-import { useState, useEffect } from 'react'
-import Header from "../header/Header"
-import Home from "../heroSection/Home"
-import Skills from "../skills/Skills"
-import Projects from "../projects/Projects"
-import ContactMe from "../contactMe/ContactMe"
-import Footer from "../footer/Footer"
-import styles from "./Layout.module.css"
-import AboutMe from '../aboutMe/AboutMe'
-import Nav from 'react-bootstrap/Nav';
-import Blogs from '../blogs/Blogs'
+import { lazy, Suspense } from "react";
+
+import styles from "./Layout.module.css";
+import Header from "../header/Header";
+import Footer from "../footer/Footer";
+
+const Home = lazy(() => import("../heroSection/Home"));
+const AboutMe = lazy(() => import("../aboutMe/AboutMe"));
+const Skills = lazy(() => import("../skills/Skills"));
+const Projects = lazy(() => import("../projects/Projects"));
+const ContactMe = lazy(() => import("../contactMe/ContactMe"));
+const Login = lazy(() => import("../login/Login"));
+const Blogs = lazy(() => import("../blogs/Blogs"));
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Login from '../login/Login'
-import Loader from '../utilityComponents/loader/Loader'
+import Loader from "../utilityComponents/loader/Loader";
+import Nav from "react-bootstrap/Nav";
 
 const Layout = () => {
-    const [loading, setLoading] = useState(true);
-
-    useEffect(() => {
-        setTimeout(() => {
-            setLoading(false);
-        }, 2000);
-    }, []);
-
     return (
         <>
-            {loading
-                ?
-                (<Loader />)
-                :
-                (<Router>
-                    <Header />
-                    <Routes>
-                        <Route path="/" element={
+            <Router>
+                <Header />
+                <Routes>
+                    <Route
+                        path="/"
+                        element={
                             <>
-                                <Home />
-                                <AboutMe />
-                                <Skills />
-                                <Projects />
-                                <ContactMe />
+                                <Suspense fallback={<Loader />}>
+                                    <Home />
+                                    <AboutMe />
+                                    <Skills />
+                                    <Projects />
+                                    <ContactMe />
+                                </Suspense>
                             </>
-                        } />
-                        <Route path="/about" element={<AboutMe />} />
-                        <Route path="/skills" element={<Skills />} />
-                        <Route path="/projects" element={<Projects />} />
-                        <Route path="/contact" element={<ContactMe />} />
-                        {/* <Route path="/blogs" element={<Blogs />} /> */}
-                        <Route path="/login" element={<Login />} />
-                    </Routes>
-                    <Footer />
-                    <div className={`${styles?.gotoHome}`}>
-                        <Nav.Link href="#root" className="btn primaryBtn">^</Nav.Link>
-                    </div>
-                </Router>)}
+                        }
+                    />
+                    <Route
+                        path="/about"
+                        element={
+                            <Suspense fallback={<Loader />}>
+                                <AboutMe />
+                            </Suspense>
+                        }
+                    />
+                    <Route
+                        path="/skills"
+                        element={
+                            <Suspense fallback={<Loader />}>
+                                <Skills />
+                            </Suspense>
+                        }
+                    />
+                    <Route
+                        path="/projects"
+                        element={
+                            <Suspense fallback={<Loader />}>
+                                <Projects />
+                            </Suspense>
+                        }
+                    />
+                    <Route
+                        path="/contact"
+                        element={
+                            <Suspense fallback={<Loader />}>
+                                <ContactMe />
+                            </Suspense>
+                        }
+                    />
+                    {/* <Route path="/blogs" element={<Suspense fallback={<Loader />}><Blogs /></Suspense>} /> */}
+                    <Route
+                        path="/login"
+                        element={
+                            <Suspense fallback={<Loader />}>
+                                <Login />
+                            </Suspense>
+                        }
+                    />
+                </Routes>
+                <Footer />
+                <div className={`${styles?.gotoHome}`}>
+                    <Nav.Link href="#root" className="btn primaryBtn">
+                        ^
+                    </Nav.Link>
+                </div>
+            </Router>
         </>
-    )
-}
+    );
+};
 
-export default Layout
+export default Layout;

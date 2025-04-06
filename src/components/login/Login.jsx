@@ -9,7 +9,7 @@ const Login = () => {
 
     const animatedIcons = [
         {
-            imgURL: "/images/plus.svg",
+            imgURL: "/svg/plus.svg",
             imgName: "plus",
         },
         {
