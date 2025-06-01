@@ -17,6 +17,32 @@ import Loader from "../utilityComponents/loader/Loader";
 import Nav from "react-bootstrap/Nav";
 
 const Layout = () => {
+    const pages = [
+        {
+            path: "/",
+            element: <Home />,
+        },
+        {
+            path: "/about",
+            element: <AboutMe />,
+        },
+        {
+            path: "/skills",
+            element: <Skills />,
+        },
+        {
+            path: "/projects",
+            element: <Projects />,
+        },
+        {
+            path: "/contact",
+            element: <ContactMe />,
+        },
+        {
+            path: "/login",
+            element: <Login />,
+        },
+    ];
     return (
         <>
             <Router>
@@ -36,47 +62,15 @@ const Layout = () => {
                             </>
                         }
                     />
-                    <Route
-                        path="/about"
-                        element={
-                            <Suspense fallback={<Loader />}>
-                                <AboutMe />
-                            </Suspense>
-                        }
-                    />
-                    <Route
-                        path="/skills"
-                        element={
-                            <Suspense fallback={<Loader />}>
-                                <Skills />
-                            </Suspense>
-                        }
-                    />
-                    <Route
-                        path="/projects"
-                        element={
-                            <Suspense fallback={<Loader />}>
-                                <Projects />
-                            </Suspense>
-                        }
-                    />
-                    <Route
-                        path="/contact"
-                        element={
-                            <Suspense fallback={<Loader />}>
-                                <ContactMe />
-                            </Suspense>
-                        }
-                    />
-                    {/* <Route path="/blogs" element={<Suspense fallback={<Loader />}><Blogs /></Suspense>} /> */}
-                    <Route
-                        path="/login"
-                        element={
-                            <Suspense fallback={<Loader />}>
-                                <Login />
-                            </Suspense>
-                        }
-                    />
+                    {
+                        pages.map((page) => (
+                            <Route
+                                key={page.path}
+                                path={page.path}
+                                element={<Suspense fallback={<Loader />}>{page.element}</Suspense>}
+                            />
+                        ))
+                    }
                 </Routes>
                 <Footer />
                 <div className={`${styles?.gotoHome}`}>

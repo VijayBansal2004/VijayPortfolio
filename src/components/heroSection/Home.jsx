@@ -3,8 +3,35 @@ import { useTypewriter, Cursor } from "react-simple-typewriter"
 import { Button } from 'react-bootstrap'
 import AnimatedIcons from '../utilityComponents/animatedIcons/AnimatedIcons'
 import { NavLink } from 'react-router-dom'
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
 
 const Home = () => {
+    gsap.registerPlugin(useGSAP);
+
+    const splitText = (text) => {
+        return text.split("").map((char, index) => {
+            return <span className="animatedText" key={index} style={{ display: "inline-block" }}>{char}</span>
+        })
+    }
+
+    useGSAP(() => {
+        gsap.from(".animatedText", {
+            duration: 1,
+            y: 30,
+            opacity: 0,
+            ease: "power2.inOut",
+            stagger: 0.05,
+        })
+
+        gsap.from(".animatedImg", {
+            duration: 1.5,
+            opacity: 0,
+            scale: .6,
+            ease: "back.out(2)",
+        })
+    });
+
     const [text] = useTypewriter({
         words: ["HTML", "CSS", "Javascript", "React JS", "Git/Github", "Bootstrap", "Tailwind"],
         loop: {},
@@ -39,7 +66,7 @@ const Home = () => {
                     <div className="container row justify-content-center align-items-center gap-3 flex-wrap-reverse">
                         <div className={`${styles?.heroSectionDetailsContainer} col-12 col-lg-5 text-center text-lg-start`}>
                             <p className={`${styles?.hello}`}>Hello, I am</p>
-                            <h1 className={`${styles?.myName}`}>Vijay Bansal</h1>
+                            <h1 className={`${styles?.myName}`}>{splitText("Vijay Bansal")}</h1>
                             <p className={`${styles?.role}`}>Front-End Developer</p>
                             <p className={`${styles?.SkilledAtContainer}`}>Skilled at <span className={`${styles?.typedText}`}>{text}<Cursor /></span></p>
                             <p>Welcome to my portfolio, a curated collection of my professional journey and creative endeavors.</p>
@@ -54,7 +81,7 @@ const Home = () => {
                         </div>
 
                         <div className={`${styles?.heroSectionImgContainer} col-12 col-lg-5`}>
-                            <div className={styles?.homeimg_cont}>
+                            <div className={`${styles?.homeimg_cont} animatedImg`} style={{ display: 'inline-block' }}>
                                 <img loading="lazy" src="/images/vijay_home.webp" alt="home image" />
                             </div>
                         </div>
