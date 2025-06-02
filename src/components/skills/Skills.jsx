@@ -5,7 +5,34 @@ import SkillsPercentage from "./SkillsPercentage";
 import Heading from "../utilityComponents/sectionHeading/Heading";
 import OverCards from "./OverCards";
 import { skills, skillPercentage } from "./data.skills"
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 const Skills = () => {
+    const splitText = (text) => {
+        return text.split("").map((char, index) => {
+            if (char === " ") {
+                return <span className="animatedText_whyChooseMe" key={index} style={{ display: "inline-block" }}>&nbsp;</span>
+            }
+            return <span className="animatedText_whyChooseMe" key={index} style={{ display: "inline-block" }}>{char}</span>
+        })
+    }
+    gsap.registerPlugin(ScrollTrigger);
+    useGSAP(() => {
+        gsap.from(".animatedText_whyChooseMe", {
+            duration: 1,
+            y: 30,
+            opacity: 0,
+            ease: "power2.inOut",
+            stagger: 0.05,
+            scrollTrigger: {
+                trigger: ".animatedText_whyChooseMe",
+                start: "top 80%",
+                end: "top 50%",
+                scrub: 1,
+            }
+        })
+    })
 
     return (
         <>
@@ -15,8 +42,8 @@ const Skills = () => {
                 <div
                     className={`${styles?.skillsContainer} containerBlockPadding text-center container position-relative`}>
                     <Heading heading="Skills" />
-                    <h2 className="text-center mb-5 scrollReveal w-100">
-                        Why Choose Me ?
+                    <h2 className="text-center mb-5 w-100">
+                        {splitText("Why Choose Me ?")}
                     </h2>
                     <p className={`${styles?.scrollReveal}`}>
                         I have a strong front-end development skill set, specializing in
