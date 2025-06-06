@@ -4,27 +4,45 @@ import { FaXTwitter } from "react-icons/fa6";
 import styles from './SocialMediaLinks.module.css'
 
 const SocialMediaLinks = () => {
+  const socialMediaLinks = [
+    {
+      name: "Github",
+      link: "https://github.com/VijayBansal2004",
+      icon: <FaGithub />
+    },
+    {
+      name: "Linkedin",
+      link: "https://www.linkedin.com/in/vijay-bansal-319048249",
+      icon: <FaLinkedin />
+    },
+    {
+      name: "XTwitter",
+      link: "https://x.com/iamvijaybansal",
+      icon: <FaXTwitter />
+    },
+    {
+      name: "Instagram",
+      link: "https://www.instagram.com/itz_vijay_bansal",
+      icon: <AiFillInstagram />
+    },
+    {
+      name: "Facebook",
+      link: "https://www.facebook.com/itzvijaybansal",
+      icon: <FaFacebook />
+    },
+
+  ]
   return (
     <>
-      <a href="https://github.com/VijayBansal2004" target='_black' className={`${styles?.socialMediaLinks}`}>
-        <FaGithub />
-      </a>
-
-      <a href="https://www.linkedin.com/in/vijay-bansal-319048249" target='_black' className={`${styles?.socialMediaLinks}`}>
-        <FaLinkedin />
-      </a>
-
-      <a href="https://x.com/iamvijaybansal" target='_black' className={`${styles?.socialMediaLinks}`}>
-        <FaXTwitter />
-      </a>
-
-      <a href="https://www.instagram.com/itz_vijay_bansal" target='_black' className={`${styles?.socialMediaLinks}`}>
-        <AiFillInstagram />
-      </a>
-
-      <a href="https://www.facebook.com/people/Vijay-Bansal/pfbid02voZ2PoY8fyP2bf8rp25FN1Z6qyAss7fheBNyW796b35qh4en9oFe9eSLFCtXzyBNl" target='_black' className={`${styles?.socialMediaLinks}`}>
-        <FaFacebook />
-      </a>
+      {
+        socialMediaLinks.map((link) => {
+          return (
+            <a key={link.name} href={link.link} target='_black' className={`${styles?.socialMediaLinks}`}>
+              {link.icon}
+            </a>
+          )
+        })
+      }
     </>
   )
 }

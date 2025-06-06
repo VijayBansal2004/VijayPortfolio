@@ -3,11 +3,36 @@ import SocialMediaLinks from "../utilityComponents/socialMedia/SocialMediaLinks"
 import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
+    const navlinks = [
+        {
+            name: "Home",
+            link: "/"
+        },
+        {
+            name: "About Me",
+            link: "/about"
+        },
+        {
+            name: "Skills",
+            link: "/skills"
+        },
+        {
+            name: "Projects",
+            link: "/projects"
+        },
+        {
+            name: "Contact Me",
+            link: "/contact"
+        },
+        // {
+        //     name: "Blogs",
+        //     link: "/blogs"
+        // },
+    ]
     return (
         <footer className={styles?.footer}>
             <div className="container row gap-4 gap-lg-0">
                 <div className="footerLogo col-12 col-lg-3 text-center text-lg-start">
-                    {/* <NavLink to="/" className={styles?.logo}><h1>Vijay</h1></NavLink> */}
                     <NavLink to='/'>
                         <img loading="lazy"
                             src="/svg/logo.svg"
@@ -19,12 +44,11 @@ const Footer = () => {
 
                 <div className="footerLinksContainer col-12 col-lg-6 align-content-center text-center text-lg-start">
                     <ul className={`${styles?.footerLinks} m-0 justify-content-center flex-column flex-sm-row`}>
-                        <NavLink to="/" className={({ isActive }) => (isActive ? `text-white ${styles?.navlink} ${styles?.active}` : `text-white ${styles?.navlink}`)}>Home</NavLink>
-                        <NavLink to="/about" className={({ isActive }) => (isActive ? `text-white ${styles?.navlink} ${styles?.active}` : `text-white ${styles?.navlink}`)}>About Me</NavLink>
-                        <NavLink to="/skills" className={({ isActive }) => (isActive ? `text-white ${styles?.navlink} ${styles?.active}` : `text-white ${styles?.navlink}`)}>Skills</NavLink>
-                        <NavLink to="/projects" className={({ isActive }) => (isActive ? `text-white ${styles?.navlink} ${styles?.active}` : `text-white ${styles?.navlink}`)}>Projects</NavLink>
-                        <NavLink to="/contact" className={({ isActive }) => (isActive ? `text-white ${styles?.navlink} ${styles?.active}` : `text-white ${styles?.navlink}`)}>Contact Me</NavLink>
-                        {/* <NavLink to="/blogs" className={`${styles?.navlink}`}>Blogs</NavLink> */}
+                        {
+                            navlinks.map((item, index) => (
+                                <NavLink key={index} to={item.link} className={({ isActive }) => (isActive ? `text-white ${styles?.navlink} ${styles?.active}` : `text-white ${styles?.navlink}`)}>{item.name}</NavLink>
+                            ))
+                        }
                     </ul>
                 </div>
 
