@@ -16,11 +16,20 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Loader from "../utilityComponents/loader/Loader";
 import Nav from "react-bootstrap/Nav";
 
+import { motion, AnimatePresence } from "motion/react";
+
 const Layout = () => {
     const pages = [
         {
             path: "/",
-            element: <Home />,
+            element:
+                <>
+                    <Home />
+                    <AboutMe />
+                    <Skills />
+                    <Projects />
+                    <ContactMe />
+                </>,
         },
         {
             path: "/about",
@@ -43,42 +52,49 @@ const Layout = () => {
             element: <Login />,
         },
     ];
+
+    const variants = {
+        hidden: (direction) => ({
+            opacity: 0,
+            x: direction === 1 ? -300 : 300
+        }),
+        visible: { opacity: 1, x: 0 }
+    }
+
     return (
         <>
-            <Router>
-                <Header />
-                <Routes>
-                    <Route
-                        path="/"
-                        element={
-                            <>
-                                <Suspense fallback={<Loader />}>
-                                    <Home />
-                                    <AboutMe />
-                                    <Skills />
-                                    <Projects />
-                                    <ContactMe />
-                                </Suspense>
-                            </>
+            <AnimatePresence mode="wait">
+                <Router>
+                    <Header />
+                    <Routes>
+                        {
+                            pages.map((page) => (
+                                <Route
+                                    key={page.path}
+                                    path={page.path}
+                                    element={
+                                        <Suspense fallback={<Loader />}>
+                                            <motion.div variants={variants}
+                                                initial="hidden"
+                                                animate="visible"
+                                                exit="hidden"
+                                            >
+                                                {page.element}
+                                            </motion.div>
+                                        </Suspense>
+                                    }
+                                />
+                            ))
                         }
-                    />
-                    {
-                        pages.map((page) => (
-                            <Route
-                                key={page.path}
-                                path={page.path}
-                                element={<Suspense fallback={<Loader />}>{page.element}</Suspense>}
-                            />
-                        ))
-                    }
-                </Routes>
-                <Footer />
-                <div className={`${styles?.gotoHome}`}>
-                    <Nav.Link href="#root" className="btn primaryBtn">
-                        ^
-                    </Nav.Link>
-                </div>
-            </Router>
+                    </Routes>
+                    <Footer />
+                    <div className={`${styles?.gotoHome}`}>
+                        <Nav.Link href="#root" className="btn primaryBtn">
+                            ^
+                        </Nav.Link>
+                    </div>
+                </Router>
+            </AnimatePresence>
         </>
     );
 };
