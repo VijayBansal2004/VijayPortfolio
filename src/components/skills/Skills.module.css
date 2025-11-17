@@ -1,0 +1,157 @@
+.skillsSection {
+  min-height: 100vh;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    background: url(/svg/blurry-shape-2.svg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+.skillsContainer {
+  color: white;
+}
+
+/* Skill container */
+.skillContainer {
+  display: flex;
+  gap: 70px;
+  justify-content: center;
+  mask-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 60%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  -webkit-mask-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.skillLogo {
+  width: 70px !important;
+  height: 70px !important;
+  filter: brightness(0.6);
+  transition: all 0.1s ease-in-out;
+
+  &:hover {
+    filter: brightness(1);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .skillLogo {
+    animation: skillsScroll linear forwards;
+    animation-timeline: scroll(root);
+  }
+}
+
+.img_cont{
+  max-width: 25px;
+  margin-bottom: 6px;
+}
+
+.img_cont img{
+  width: 100%;
+}
+
+@keyframes skillsScroll {
+  0% {
+    transform: translateX(-50vw);
+  }
+
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+/* Skills in percentage */
+
+.skillsPercentage {
+  padding-top: 100px !important;
+}
+
+.skillsPercentageHeading {
+  position: sticky;
+  top: 10vh;
+  display: inline-block;
+  background-color: #f2660257;
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+
+.skillPercentageContainer {
+  transition: all 0.2s ease-out;
+}
+
+.skillName,
+.skillPercentage {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.skillPercentageBar {
+  background-color: var(--oringe-color);
+  height: 5px;
+  border-radius: 10px;
+}
+
+@media (max-width: 992px) {
+  .skillContainer {
+    gap: 50px;
+  }
+}
+
+@media (max-width: 575px) {
+  .skillContainer {
+    gap: 30px;
+  }
+
+  .skillsPercentage {
+    padding-top: 50px !important;
+  }
+
+  .skillName,
+  .skillPercentage {
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 470px) {
+  .skillContainer {
+    gap: 20px;
+  }
+
+  .skillLogo {
+    width: 50px !important;
+    height: 50px !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .skillContainer {
+    gap: 15px;
+  }
+
+  .skillLogo {
+    width: 40px !important;
+    height: 40px !important;
+    filter: brightness(1);
+  }
+}

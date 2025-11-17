@@ -1,0 +1,38 @@
+.login_container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: url(/svg/blurry-shape-2.svg);
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  margin-top: -10vh;
+  position: relative;
+}
+
+.login_container form {
+  background-color: #131313;
+  border-radius: 20px;
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
+  padding: 45px 50px;
+}
+
+.login_container h1 {
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+
+.login_container label {
+  color: white;
+  font-weight: 600;
+}
+
+.login_container input {
+  min-height: 50px;
+}

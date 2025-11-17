@@ -1,0 +1,78 @@
+import styles from "./ContactMe.module.css"
+import Button from 'react-bootstrap/Button';
+import Heading from '../utilityComponents/sectionHeading/Heading';
+import SocialMediaLinks from '../utilityComponents/socialMedia/SocialMediaLinks';
+import { useForm, ValidationError } from '@formspree/react';
+
+const ContactMe = () => {
+    const [state, handleSubmit] = useForm("mblrbzgl");
+
+    if (state.succeeded) {
+        return <p className='fw-bold text-success display-6 text-center'>Thank you for contacting Me!</p>
+    }
+
+    return (
+        <section id='contactMe' className={`${styles?.contactMeContainer} text-white containerBlockPadding d-flex justify-content-center align-items-center`}>
+            <div className="position-relative container d-flex flex-column flex-lg-row justify-content-between align-items-center gap-5 gap-lg-0">
+                <div className={`${styles?.socialMedia} text-center`}>
+                    <Heading heading="Social Media" />
+                    <div className="links d-flex gap-3 justify-content-center">
+                        <SocialMediaLinks />
+                    </div>
+                </div>
+                <div className={`${styles?.formContainer} w-100`}>
+                    <Heading heading="Contact Me" />
+                    <h2 className='text-center mb-2 scrollReveal w-100'>Get In Touch!</h2>
+
+                    <form className={`${styles?.contactFeildContainer}`} onSubmit={handleSubmit}>
+                        <div className="fadeUpAnimation">
+                            <input
+                                id="name"
+                                type="text"
+                                name="name"
+                                className={`${styles?.formControl}`}
+                                placeholder='Enter name'
+                            />
+                            <ValidationError
+                                prefix="Name"
+                                field="name"
+                                errors={state.errors}
+                            />
+                        </div>
+
+                        <div className="fadeUpAnimation">
+                            <input
+                                id="email"
+                                type="email"
+                                name="email"
+                                className={`${styles?.formControl}`}
+                                placeholder='Enter email'
+                            />
+                            <ValidationError
+                                prefix="Email"
+                                field="email"
+                                errors={state.errors}
+                            />
+                        </div>
+                        <div className="fadeUpAnimation">
+                            <textarea
+                                id="message"
+                                name="message"
+                                className={`${styles?.formControl}`}
+                                placeholder='Enter your thoughts...'
+                            />
+                            <ValidationError
+                                prefix="Message"
+                                field="message"
+                                errors={state.errors}
+                            />
+                        </div>
+                        <Button className="primaryBtn w-100 fadeUpAnimation" type="submit" size="lg" disabled={state.submitting}>Submit</Button>
+                    </form>
+                </div>
+            </div>
+        </section >
+    )
+}
+
+export default ContactMe

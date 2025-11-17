@@ -1,0 +1,90 @@
+.footer {
+    color: white;
+    min-height: 20vh;
+    align-content: center;
+    background-color: black;
+    padding-block: 20px;
+}
+
+/* .footer .logo{
+    text-decoration: none;
+    color: white;
+} */
+
+.footer .logo_img{
+    height: 80px;
+}
+
+.footer .footerLinks {
+    display: flex;
+    gap: 5%;
+}
+
+.footer .footerLinks * {
+    color: white;
+    transition: all .2s ease-in;
+
+    &:hover {
+        color: var(--oringe-color) !important;
+    }
+}
+
+@media(max-width:575px) {
+    .footer .footerLinks {
+        padding: 0;
+        gap: 10px;
+    }
+    .footer .logo_img{
+        height: 60px;
+    }
+}
+
+.navlink {
+    font-size: 1.1rem !important;
+    position: relative;
+    transition: all .2s ease-in-out;
+    text-decoration: none;
+
+    &:hover {
+        color: #ffc49a !important;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 0px;
+        height: 2px;
+        background-color: var(--oringe-color);
+        bottom: 0;
+        left: 0;
+    }
+
+    &:hover::after {
+        animation: navlinkAnimation .2s ease-in forwards;
+    }
+}
+
+.footer .active{
+    position: relative;
+    color: #ffc49a !important;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 0px;
+        height: 2px;
+        background-color: var(--oringe-color);
+        bottom: 0;
+        left: 0;
+    }
+
+    &::after {
+        animation: navlinkAnimation .2s ease-in forwards;
+    }
+}
+
+@keyframes navlinkAnimation {
+    100% {
+        width: 100%;
+    }
+}

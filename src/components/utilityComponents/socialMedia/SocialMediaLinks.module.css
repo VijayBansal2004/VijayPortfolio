@@ -1,0 +1,9 @@
+.socialMediaLinks {
+    transition: all .1s ease-in;
+    color: white;
+}
+
+.socialMediaLinks:hover {
+    color: var(--oringe-color);
+    scale: 1.2;
+}
