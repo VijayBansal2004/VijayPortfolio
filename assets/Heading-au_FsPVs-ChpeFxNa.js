@@ -1,0 +1,1 @@
+import{k as e}from"./index-CNTOz8UH.js";const l="_headingStyles_1vgjw_1",i={headingStyles:l},s=({heading:d})=>e.jsx("div",{className:`${i==null?void 0:i.headingStyles}`,children:e.jsx("p",{children:d})});export{s as a};
