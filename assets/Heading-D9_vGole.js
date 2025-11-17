@@ -1,1 +1,0 @@
-import{j as s}from"./index-B3piVhZs.js";const t="_headingStyles_1vgjw_1",e={headingStyles:t},a=({heading:n})=>s.jsx("div",{className:`${e==null?void 0:e.headingStyles}`,children:s.jsx("p",{children:n})});export{a as H};
