@@ -70,12 +70,12 @@ const skillPercentage = [
   {
     skillName: "React JS",
     img_url: "/svg/reactJSLogo.svg",
-    skillPercentage: "80%",
+    skillPercentage: "82%",
   },
   {
     skillName: "Git/Github",
     img_url: "/svg/gitLogo.svg",
-    skillPercentage: "84%",
+    skillPercentage: "89%",
   },
   {
     skillName: "Wordpress",
